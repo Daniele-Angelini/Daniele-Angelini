@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="../style.css">
 
-    <!-- FullCalendar 7: official browser bundle and theme -->
+    <!-- FullCalendar 7 standard styles and Monarch theme -->
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/skeleton.css"
@@ -34,16 +34,26 @@
         href="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/themes/monarch/palettes/purple.css"
     >
 
-    <!-- Course-specific calendar styling -->
-    <link rel="stylesheet" href="calendar-additions.css">
+    <!-- Local styling: version query prevents stale browser cache -->
+    <link rel="stylesheet" href="calendar-additions.css?v=3">
 
     <script src="../script.js" defer></script>
+
+    <!-- FullCalendar standard bundle -->
     <script
         src="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/all/global.js"
         defer
     ></script>
+
+    <!-- Required JavaScript for the Monarch theme -->
     <script
-        src="mathematical-methods-for-finance-calendar.js"
+        src="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/themes/monarch/global.js"
+        defer
+    ></script>
+
+    <!-- Course dates: version query prevents stale browser cache -->
+    <script
+        src="mathematical-methods-for-finance-calendar.js?v=3"
         defer
     ></script>
 </head>
@@ -117,7 +127,7 @@
 
                 <div class="course-meta-item">
                     <strong>Academic year</strong>
-                    <span>Previous academic year</span>
+                    <span>2025/2026</span>
                 </div>
 
                 <div class="course-meta-item">
@@ -184,7 +194,11 @@
                         <div
                             id="course-calendar"
                             aria-label="Mathematical Methods for Finance lesson calendar"
-                        ></div>
+                        >
+                            <p class="calendar-loading">
+                                Loading lesson calendar…
+                            </p>
+                        </div>
                     </div>
 
                     <noscript>
