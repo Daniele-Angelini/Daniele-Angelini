@@ -2,608 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
         content="Academic website of Daniele Angelini, researcher in mathematical finance, fractional processes and rough volatility."
     >
-
     <meta name="author" content="Daniele Angelini">
-    <meta name="google-site-verification" content="vKWY8cyDFnLcz3IuRylikxAc7gGVEULMmD-EM0_ICck" />
+    <meta
+        name="google-site-verification"
+        content="vKWY8cyDFnLcz3IuRylikxAc7gGVEULMmD-EM0_ICck"
+    >
     <meta name="theme-color" content="#173b57">
 
-    <title>niele Angelini | Mathematical Finance</title>
-    <link rel="canonical" href="https://daniele-angelini.github.io/Daniele-Angelini/">
-    
-    <style>
-        :root {
-            --primary: #173b57;
-            --primary-light: #285f85;
-            --accent: #b78b42;
-            --background: #f7f8fa;
-            --surface: #ffffff;
-            --text: #1d2730;
-            --muted: #65717c;
-            --border: #dfe5ea;
-            --shadow: 0 12px 35px rgba(20, 45, 65, 0.08);
-            --radius: 14px;
-            --max-width: 1080px;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            background: var(--background);
-            color: var(--text);
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-            line-height: 1.7;
-        }
-
-        a {
-            color: var(--primary-light);
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: var(--accent);
-        }
-
-        h1,
-        h2,
-        h3,
-        p {
-            margin-top: 0;
-        }
-
-        .container {
-            width: min(var(--max-width), calc(100% - 40px));
-            margin: 0 auto;
-        }
-
-        /* Navigation */
-
-        .site-header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.96);
-            border-bottom: 1px solid var(--border);
-            backdrop-filter: blur(12px);
-        }
-
-        .navigation {
-            min-height: 72px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 30px;
-        }
-
-        .site-name {
-            color: var(--primary);
-            font-size: 1.1rem;
-            font-weight: 750;
-            letter-spacing: 0.02em;
-            white-space: nowrap;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            flex-wrap: wrap;
-            gap: 22px;
-        }
-
-        .nav-links a {
-            color: var(--text);
-            font-size: 0.94rem;
-            font-weight: 600;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        /* Hero section */
-
-        .hero {
-            padding: 95px 0 80px;
-            background:
-                radial-gradient(
-                    circle at top right,
-                    rgba(40, 95, 133, 0.12),
-                    transparent 38%
-                ),
-                linear-gradient(
-                    135deg,
-                    #ffffff 0%,
-                    #f2f5f7 100%
-                );
-            border-bottom: 1px solid var(--border);
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr 260px;
-            align-items: center;
-            gap: 70px;
-        }
-
-        .eyebrow {
-            margin-bottom: 15px;
-            color: var(--accent);
-            font-size: 0.82rem;
-            font-weight: 800;
-            letter-spacing: 0.16em;
-            text-transform: uppercase;
-        }
-
-        .hero h1 {
-            margin-bottom: 16px;
-            color: var(--primary);
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: clamp(2.8rem, 6vw, 5rem);
-            font-weight: 500;
-            line-height: 1.05;
-            letter-spacing: -0.035em;
-        }
-
-        .hero-subtitle {
-            margin-bottom: 25px;
-            color: var(--primary-light);
-            font-size: clamp(1.15rem, 2.5vw, 1.45rem);
-            font-weight: 600;
-        }
-
-        .hero-description {
-            max-width: 700px;
-            margin-bottom: 32px;
-            color: var(--muted);
-            font-size: 1.08rem;
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 13px;
-        }
-
-        .button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 46px;
-            padding: 10px 20px;
-            border: 1px solid var(--primary);
-            border-radius: 8px;
-            font-weight: 700;
-            transition:
-                transform 0.2s ease,
-                background 0.2s ease,
-                color 0.2s ease;
-        }
-
-        .button:hover {
-            transform: translateY(-2px);
-        }
-
-        .button-primary {
-            background: var(--primary);
-            color: #ffffff;
-        }
-
-        .button-primary:hover {
-            background: var(--primary-light);
-            color: #ffffff;
-        }
-
-        .button-secondary {
-            background: transparent;
-            color: var(--primary);
-        }
-
-        .button-secondary:hover {
-            background: var(--primary);
-            color: #ffffff;
-        }
-
-        .profile-photo {
-            width: 240px;
-            height: 240px;
-            display: block;
-            justify-self: end;
-            border: 7px solid #ffffff;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: center;
-            box-shadow: var(--shadow);
-        }
-
-        /* General sections */
-
-        section {
-            padding: 80px 0;
-            scroll-margin-top: 70px;
-        }
-
-        section:nth-of-type(even) {
-            background: var(--surface);
-        }
-
-        .section-heading {
-            margin-bottom: 40px;
-        }
-
-        .section-label {
-            margin-bottom: 7px;
-            color: var(--accent);
-            font-size: 0.78rem;
-            font-weight: 800;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-        }
-
-        .section-heading h2 {
-            margin-bottom: 12px;
-            color: var(--primary);
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: clamp(2rem, 4vw, 2.75rem);
-            font-weight: 500;
-        }
-
-        .section-intro {
-            max-width: 760px;
-            margin-bottom: 0;
-            color: var(--muted);
-            font-size: 1.03rem;
-        }
-
-        /* About */
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: 55px;
-        }
-
-        .about-text p {
-            font-size: 1.04rem;
-        }
-
-        .info-card {
-            padding: 28px;
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            background: var(--surface);
-            box-shadow: var(--shadow);
-        }
-
-        .info-card h3 {
-            margin-bottom: 18px;
-            color: var(--primary);
-        }
-
-        .info-list {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .info-list li {
-            padding: 11px 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .info-list li:last-child {
-            border-bottom: none;
-        }
-
-        .info-list strong {
-            display: block;
-            color: var(--primary);
-            font-size: 0.9rem;
-        }
-
-        /* Research */
-
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
-
-        .card {
-            padding: 28px;
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            background: var(--surface);
-            box-shadow: var(--shadow);
-            transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 16px 40px rgba(20, 45, 65, 0.12);
-        }
-
-        .card-number {
-            margin-bottom: 14px;
-            color: var(--accent);
-            font-size: 0.8rem;
-            font-weight: 800;
-            letter-spacing: 0.1em;
-        }
-
-        .card h3 {
-            margin-bottom: 12px;
-            color: var(--primary);
-            font-size: 1.16rem;
-        }
-
-        .card p {
-            margin-bottom: 0;
-            color: var(--muted);
-            font-size: 0.96rem;
-        }
-
-        /* Papers */
-
-        .paper-list {
-            display: grid;
-            gap: 18px;
-        }
-
-        .paper {
-            padding: 25px 28px;
-            border-left: 4px solid var(--accent);
-            border-radius: 0 var(--radius) var(--radius) 0;
-            background: var(--surface);
-            box-shadow: var(--shadow);
-        }
-
-        .paper h3 {
-            margin-bottom: 7px;
-            color: var(--primary);
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: 1.18rem;
-            font-weight: 600;
-        }
-
-        .paper-title-link {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        .paper-title-link:hover {
-            color: var(--accent);
-            text-decoration: underline;
-            text-underline-offset: 4px;
-        }
-
-        .paper-meta {
-            margin-bottom: 8px;
-            color: var(--accent);
-            font-size: 0.87rem;
-            font-weight: 700;
-        }
-
-        .paper p {
-            margin-bottom: 0;
-            color: var(--muted);
-            font-size: 0.95rem;
-        }
-
-        /* Teaching */
-
-        .teaching-box {
-            padding: 32px;
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            background: var(--surface);
-            box-shadow: var(--shadow);
-        }
-
-        .teaching-box h3 {
-            margin-bottom: 8px;
-            color: var(--primary);
-        }
-
-        .teaching-box p {
-            margin-bottom: 0;
-            color: var(--muted);
-        }
-
-        /* Contact */
-
-        .contact-section {
-            background: var(--primary);
-            color: #ffffff;
-        }
-
-        section.contact-section {
-            background: var(--primary);
-            color: #ffffff;
-        }
-
-        .contact-section .section-heading h2 {
-            color: #ffffff;
-        }
-
-        .contact-section .section-intro {
-            color: rgba(255, 255, 255, 0.76);
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .contact-item {
-            padding: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.16);
-            border-radius: var(--radius);
-            background: rgba(255, 255, 255, 0.06);
-        }
-
-        .contact-item h3 {
-            margin-bottom: 8px;
-            color: #ffffff;
-            font-size: 1rem;
-        }
-
-        .contact-item p,
-        .contact-item a {
-            margin-bottom: 0;
-            color: rgba(255, 255, 255, 0.78);
-            overflow-wrap: anywhere;
-        }
-
-        .contact-item a:hover {
-            color: #ffffff;
-        }
-
-        /* Footer */
-
-        footer {
-            padding: 25px 0;
-            background: #102c40;
-            color: rgba(255, 255, 255, 0.65);
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* Responsive layout */
-
-        @media (max-width: 850px) {
-            .navigation {
-                padding: 15px 0;
-                align-items: flex-start;
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .nav-links {
-                justify-content: flex-start;
-                gap: 12px 18px;
-            }
-
-            .hero {
-                padding-top: 65px;
-            }
-
-            .hero-grid {
-                grid-template-columns: 1fr;
-                gap: 45px;
-            }
-
-            .profile-photo {
-                width: 190px;
-                height: 190px;
-                justify-self: start;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .card-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 520px) {
-            .container {
-                width: min(100% - 28px, var(--max-width));
-            }
-
-            section {
-                padding: 60px 0;
-            }
-
-            .hero {
-                padding: 55px 0 60px;
-            }
-
-            .hero h1 {
-                font-size: 2.75rem;
-            }
-
-            .button {
-                width: 100%;
-            }
-
-            .nav-links {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+    <title>Daniele Angelini | Mathematical Finance</title>
+    <link
+        rel="canonical"
+        href="https://daniele-angelini.github.io/Daniele-Angelini/"
+    >
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-
     <header class="site-header">
         <div class="container navigation">
-
-            <a class="site-name" href="#home">
-                Daniele Angelini
-            </a>
+            <a class="site-name" href="index.html">Daniele Angelini</a>
 
             <nav class="nav-links" aria-label="Main navigation">
                 <a href="#about">About</a>
-                <a href="#research">Research</a>
+                <a href="research.html">Research</a>
                 <a href="#papers">Papers</a>
-                <a href="#teaching">Teaching</a>
-                <a href="cv.pdf" target="_blank">CV</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
                 <a href="#contact">Contact</a>
             </nav>
-
         </div>
     </header>
 
     <main>
 
-        <!-- Hero -->
-
         <section class="hero" id="home">
             <div class="container hero-grid">
 
                 <div>
-                    <p class="eyebrow">
-                        Mathematical Finance
-                    </p>
+                    <p class="eyebrow">Mathematical Finance</p>
 
                     <h1>Daniele Angelini</h1>
 
@@ -620,8 +63,7 @@
                     </p>
 
                     <div class="hero-buttons">
-
-                        <a class="button button-primary" href="#papers">
+                        <a class="button button-primary" href="research.html">
                             View research
                         </a>
 
@@ -629,17 +71,21 @@
                             class="button button-secondary"
                             href="cv.pdf"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             Download CV
                         </a>
-
                     </div>
                 </div>
 
-                <img class="profile-photo" src="foto_profilo.png" alt="Daniele Angelini">
-        </section>
+                <img
+                    class="profile-photo"
+                    src="foto_profilo.png"
+                    alt="Portrait of Daniele Angelini"
+                >
 
-        <!-- About -->
+            </div>
+        </section>
 
         <section id="about">
             <div class="container">
@@ -691,17 +137,14 @@
                                 <strong>Institution</strong>
                                 Sapienza University of Rome
                             </li>
-
                             <li>
                                 <strong>Field</strong>
                                 Mathematical Finance
                             </li>
-
                             <li>
                                 <strong>Research areas</strong>
                                 Fractional processes and volatility modelling
                             </li>
-
                             <li>
                                 <strong>Location</strong>
                                 Rome, Italy
@@ -712,101 +155,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Research interests -->
-
-        <section id="research">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="section-label">Research</p>
-                    <h2>Research interests</h2>
-
-                    <p class="section-intro">
-                        My current research activity is organised around the
-                        following interconnected areas.
-                    </p>
-                </div>
-
-                <div class="card-grid">
-
-                    <article class="card">
-                        <p class="card-number">01</p>
-
-                        <h3>Fractional processes</h3>
-
-                        <p>
-                            Fractional Brownian motion, fractional Gaussian
-                            noise, multifractional processes, self-similarity
-                            and long-range dependence.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <p class="card-number">02</p>
-
-                        <h3>Rough volatility</h3>
-
-                        <p>
-                            Statistical identification of rough market
-                            regimes and fractional approaches to realized and
-                            implied volatility.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <p class="card-number">03</p>
-
-                        <h3>Financial econometrics</h3>
-
-                        <p>
-                            High-frequency data, volatility forecasting,
-                            goodness-of-fit testing and estimation of
-                            dependence and regularity parameters.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <p class="card-number">04</p>
-
-                        <h3>Hölder regularity</h3>
-
-                        <p>
-                            Local regularity as a tool for analysing financial
-                            risk, market states and time-varying volatility
-                            structures.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <p class="card-number">05</p>
-
-                        <h3>Market efficiency</h3>
-
-                        <p>
-                            Statistical assessment of efficient and
-                            inefficient market regimes through memory,
-                            scaling and local regularity.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <p class="card-number">06</p>
-
-                        <h3>Statistical methods</h3>
-
-                        <p>
-                            Kolmogorov–Smirnov procedures, Monte Carlo
-                            analysis, fractional differentiation and robust
-                            estimation for dependent processes.
-                        </p>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Selected papers -->
 
         <section id="papers">
             <div class="container">
@@ -831,9 +179,9 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                            (In)Efficient Market States and Rough Volatility
-                            Detected via Grünwald–Letnikov Fractional
-                            Derivative 
+                                (In)Efficient Market States and Rough
+                                Volatility Detected via Grünwald–Letnikov
+                                Fractional Derivative
                             </a>
                         </h3>
 
@@ -857,8 +205,8 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                            When Is Volatility Fair? Hölder Regularity and
-                            Financial Risk
+                                When Is Volatility Fair? Hölder Regularity and
+                                Financial Risk
                             </a>
                         </h3>
 
@@ -910,36 +258,6 @@
             </div>
         </section>
 
-        <!-- Teaching -->
-
-        <section id="teaching">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="section-label">Academic activity</p>
-                    <h2>Teaching</h2>
-
-                    <p class="section-intro">
-                        Teaching activities in mathematics, probability and
-                        quantitative finance.
-                    </p>
-                </div>
-
-                <div class="teaching-box">
-                    <h3>Current and previous teaching</h3>
-
-                    <p>
-                        Information about courses, teaching materials,
-                        examinations and student office hours will be added
-                        here.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Contact -->
-
         <section class="contact-section" id="contact">
             <div class="container">
 
@@ -958,7 +276,6 @@
 
                     <div class="contact-item">
                         <h3>Email</h3>
-
                         <p>
                             <a href="mailto:daniele.angelini@uniroma1.it">
                                 daniele.angelini@uniroma1.it
@@ -968,18 +285,12 @@
 
                     <div class="contact-item">
                         <h3>Institution</h3>
-
-                        <p>
-                            Sapienza University of Rome
-                        </p>
+                        <p>Sapienza University of Rome</p>
                     </div>
 
                     <div class="contact-item">
                         <h3>Location</h3>
-
-                        <p>
-                            Rome, Italy
-                        </p>
+                        <p>Rome, Italy</p>
                     </div>
 
                 </div>
@@ -990,9 +301,7 @@
 
     <footer>
         <div class="container">
-            <p>
-                © 2026 Daniele Angelini. All rights reserved.
-            </p>
+            <p>© 2026 Daniele Angelini. All rights reserved.</p>
         </div>
     </footer>
 
