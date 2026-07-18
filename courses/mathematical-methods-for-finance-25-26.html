@@ -12,10 +12,40 @@
     <meta name="theme-color" content="#173b57">
 
     <title>Mathematical Methods for Finance | Daniele Angelini</title>
-    <link rel="canonical" href="https://daniele-angelini.github.io/Daniele-Angelini/courses/mathematical-methods-for-finance-25-26.html">
+
+    <link
+        rel="canonical"
+        href="https://daniele-angelini.github.io/Daniele-Angelini/courses/mathematical-methods-for-finance-25-26.html"
+    >
 
     <link rel="stylesheet" href="../style.css">
+
+    <!-- FullCalendar 7: official browser bundle and theme -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/skeleton.css"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/themes/monarch/theme.css"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/themes/monarch/palettes/purple.css"
+    >
+
+    <!-- Course-specific calendar styling -->
+    <link rel="stylesheet" href="calendar-additions.css">
+
     <script src="../script.js" defer></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/all/global.js"
+        defer
+    ></script>
+    <script
+        src="mathematical-methods-for-finance-calendar.js"
+        defer
+    ></script>
 </head>
 
 <body>
@@ -74,7 +104,8 @@
             <h1>Mathematical Methods for Finance 25/26</h1>
 
             <p class="page-intro">
-                Course page for Mathematical Methods for Finance 25/26 at the University of Perugia.
+                Course page for Mathematical Methods for Finance 25/26
+                at the University of Perugia.
             </p>
 
             <div class="course-meta-grid">
@@ -135,6 +166,35 @@
                     </ul>
                 </article>
 
+                <article class="course-section" id="lesson-calendar">
+                    <h2>Lesson calendar</h2>
+
+                    <p>
+                        Use the controls to browse the months and switch
+                        between month, week and day views. Lesson times refer
+                        to the local time in Perugia.
+                    </p>
+
+                    <div class="calendar-legend" aria-label="Calendar legend">
+                        <span class="calendar-legend-marker"></span>
+                        <span>Scheduled lesson</span>
+                    </div>
+
+                    <div class="calendar-shell">
+                        <div
+                            id="course-calendar"
+                            aria-label="Mathematical Methods for Finance lesson calendar"
+                        ></div>
+                    </div>
+
+                    <noscript>
+                        <p class="calendar-warning">
+                            JavaScript must be enabled to view the interactive
+                            lesson calendar.
+                        </p>
+                    </noscript>
+                </article>
+
                 <article class="course-section" id="materials">
                     <h2>Teaching materials</h2>
 
@@ -177,6 +237,7 @@
                 <ul class="course-sidebar-list">
                     <li><a href="#overview">Course overview</a></li>
                     <li><a href="#programme">Programme</a></li>
+                    <li><a href="#lesson-calendar">Lesson calendar</a></li>
                     <li><a href="#materials">Teaching materials</a></li>
                     <li><a href="#assessment">Assessment</a></li>
                     <li><a href="#contact">Contacts</a></li>
