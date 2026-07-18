@@ -997,3 +997,122 @@ footer p {
         padding: 23px;
     }
 }
+
+
+/* Teaching page: preserve the desktop composition on smartphones */
+
+@media (max-width: 700px) {
+    .teaching-list {
+        width: 100%;
+        gap: 18px;
+    }
+
+    .teaching-box,
+    .teaching-accordion {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* Keep title and status arranged as on desktop. */
+    .teaching-heading-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .teaching-heading-row > div {
+        min-width: 0;
+    }
+
+    .teaching-status {
+        flex: 0 0 auto;
+        justify-self: auto;
+        padding: 5px 8px;
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+
+    /* Keep the accordion header identical to the desktop card. */
+    .teaching-accordion summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        width: 100%;
+        padding: 24px;
+    }
+
+    .teaching-accordion summary > span:first-child {
+        min-width: 0;
+    }
+
+    .accordion-title {
+        font-size: 1.4rem;
+        line-height: 1.25;
+    }
+
+    .accordion-icon {
+        flex: 0 0 22px;
+    }
+
+    .accordion-content {
+        width: 100%;
+        padding: 0 24px 24px;
+    }
+
+    /* Force the courses into one vertical column. */
+    .course-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .course-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        min-width: 0;
+        padding: 17px;
+    }
+
+    .course-card-main {
+        min-width: 0;
+        max-width: calc(100% - 36px);
+    }
+
+    .course-card-main strong,
+    .course-card-main span {
+        overflow-wrap: anywhere;
+    }
+
+    .course-card-arrow {
+        align-self: center;
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .teaching-heading-row {
+        gap: 8px;
+    }
+
+    .teaching-status {
+        max-width: 105px;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .teaching-accordion summary,
+    .accordion-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .course-card {
+        padding: 15px;
+    }
+}
