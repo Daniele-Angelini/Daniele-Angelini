@@ -6,16 +6,18 @@
 
     <meta
         name="description"
-        content="Teaching activities of Daniele Angelini in mathematics, probability and quantitative finance."
+        content="Teaching activities, current courses and previous courses of Daniele Angelini."
     >
     <meta name="author" content="Daniele Angelini">
     <meta name="theme-color" content="#173b57">
 
     <title>Teaching | Daniele Angelini</title>
+
     <link
         rel="canonical"
         href="https://daniele-angelini.github.io/Daniele-Angelini/teaching.html"
     >
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -24,7 +26,10 @@
 
 <header class="site-header">
     <div class="container navigation">
-        <a class="site-name" href="index.html">Daniele Angelini</a>
+
+        <a class="site-name" href="index.html">
+            Daniele Angelini
+        </a>
 
         <button
             class="menu-toggle"
@@ -47,74 +52,208 @@
             <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
             <a href="index.html#contact">Contact</a>
         </nav>
+
     </div>
 </header>
 
-    <main>
+<main>
 
-        <header class="page-header">
-            <div class="container">
-                <p class="page-label">Academic activity</p>
-                <h1>Teaching</h1>
+    <header class="page-header">
+        <div class="container">
 
-                <p class="page-intro">
-                    Courses, teaching appointments and educational materials
-                    in mathematics, probability and quantitative finance.
+            <p class="page-label">Academic activity</p>
+
+            <h1>Teaching</h1>
+
+            <p class="page-intro">
+                Current and previous teaching activities in mathematics,
+                probability and quantitative finance.
+            </p>
+
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-label">Courses</p>
+
+                <h2>Teaching activities</h2>
+
+                <p class="section-intro">
+                    Select a course to access its programme, teaching
+                    materials, examination information and announcements.
                 </p>
             </div>
-        </header>
 
-        <section>
-            <div class="container">
+            <div class="teaching-list">
 
-                <div class="section-heading">
-                    <p class="section-label">Courses</p>
-                    <h2>Teaching activities</h2>
+                <!-- Current teaching -->
 
-                    <p class="section-intro">
-                        This page can list current and previous courses,
-                        teaching materials, examinations and office hours.
+                <article class="teaching-box teaching-current">
+
+                    <div class="teaching-heading-row">
+                        <div>
+                            <p class="teaching-kicker">Current</p>
+                            <h2>Current teaching</h2>
+                        </div>
+
+                        <span class="teaching-status">
+                            Current courses
+                        </span>
+                    </div>
+
+                    <p>
+                        Current courses can be listed here with their
+                        institution, degree programme, academic year and
+                        course page.
                     </p>
-                </div>
 
-                <div class="teaching-list">
+                    <!--
+                    Example:
 
-                    <article class="teaching-box">
-                        <h2>Current teaching</h2>
-                        <p>
-                            Add the course title, institution, degree
-                            programme, academic year and links to teaching
-                            materials here.
+                    <a class="course-card" href="courses/current-course.html">
+                        <span class="course-card-main">
+                            <strong>Course title</strong>
+                            <span>Institution · Degree programme</span>
+                        </span>
+                        <span class="course-card-arrow" aria-hidden="true">→</span>
+                    </a>
+                    -->
+
+                </article>
+
+                <!-- Previous teaching accordion -->
+
+                <details class="teaching-accordion">
+
+                    <summary>
+                        <span>
+                            <span class="teaching-kicker">Archive</span>
+                            <span class="accordion-title">
+                                Previous teaching
+                            </span>
+                        </span>
+
+                        <span
+                            class="accordion-icon"
+                            aria-hidden="true"
+                        ></span>
+                    </summary>
+
+                    <div class="accordion-content">
+
+                        <p class="accordion-intro">
+                            Courses taught during the previous academic year.
+                            Select a course to open its dedicated page.
                         </p>
-                    </article>
 
-                    <article class="teaching-box">
-                        <h2>Previous teaching</h2>
-                        <p>
-                            Add previous courses, seminars, tutorials and
-                            other educational activities here.
-                        </p>
-                    </article>
+                        <div class="academic-year-group">
 
-                    <article class="teaching-box">
-                        <h2>Student information</h2>
-                        <p>
-                            Add office hours, examination information and
-                            instructions for contacting you about teaching.
-                        </p>
-                    </article>
+                            <h3>Previous academic year</h3>
 
-                </div>
+                            <div class="course-list">
+
+                                <a
+                                    class="course-card"
+                                    href="courses/mathematical-methods-for-finance.html"
+                                >
+                                    <span class="course-card-main">
+                                        <strong>
+                                            Mathematical Methods for Finance
+                                        </strong>
+
+                                        <span>
+                                            University of Perugia
+                                        </span>
+                                    </span>
+
+                                    <span
+                                        class="course-card-arrow"
+                                        aria-hidden="true"
+                                    >
+                                        →
+                                    </span>
+                                </a>
+
+                                <a
+                                    class="course-card"
+                                    href="courses/rome-course-one.html"
+                                >
+                                    <span class="course-card-main">
+                                        <strong>
+                                            Rome course I
+                                        </strong>
+
+                                        <span>
+                                            Sapienza University of Rome
+                                        </span>
+                                    </span>
+
+                                    <span
+                                        class="course-card-arrow"
+                                        aria-hidden="true"
+                                    >
+                                        →
+                                    </span>
+                                </a>
+
+                                <a
+                                    class="course-card"
+                                    href="courses/rome-course-two.html"
+                                >
+                                    <span class="course-card-main">
+                                        <strong>
+                                            Rome course II
+                                        </strong>
+
+                                        <span>
+                                            Sapienza University of Rome
+                                        </span>
+                                    </span>
+
+                                    <span
+                                        class="course-card-arrow"
+                                        aria-hidden="true"
+                                    >
+                                        →
+                                    </span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Student information -->
+
+                <article class="teaching-box">
+
+                    <p class="teaching-kicker">
+                        Information
+                    </p>
+
+                    <h2>Student information</h2>
+
+                    <p>
+                        General information about office hours, examinations
+                        and teaching-related contacts can be added here.
+                    </p>
+
+                </article>
+
             </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>© 2026 Daniele Angelini. All rights reserved.</p>
         </div>
-    </footer>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Daniele Angelini. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>

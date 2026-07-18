@@ -457,6 +457,349 @@ main > section:nth-of-type(even):not(.contact-section) {
     color: var(--muted);
 }
 
+
+
+/* Teaching archive and course links */
+
+.teaching-heading-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.teaching-kicker {
+    margin-bottom: 5px;
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.teaching-status {
+    flex: 0 0 auto;
+    padding: 6px 11px;
+    border: 1px solid rgba(40, 95, 133, 0.18);
+    border-radius: 999px;
+    background: rgba(40, 95, 133, 0.07);
+    color: var(--primary-light);
+    font-size: 0.78rem;
+    font-weight: 750;
+}
+
+.teaching-accordion {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.teaching-accordion summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 28px 32px;
+    color: var(--primary);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+}
+
+.teaching-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.teaching-accordion summary:hover {
+    background: rgba(40, 95, 133, 0.035);
+}
+
+.teaching-accordion summary:focus-visible {
+    outline: 3px solid rgba(40, 95, 133, 0.28);
+    outline-offset: -3px;
+}
+
+.accordion-title {
+    display: block;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+.accordion-icon {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+}
+
+.accordion-icon::before,
+.accordion-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--primary);
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease;
+}
+
+.accordion-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.teaching-accordion[open] .accordion-icon::after {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.accordion-content {
+    padding: 0 32px 32px;
+    border-top: 1px solid var(--border);
+}
+
+.accordion-intro {
+    margin: 24px 0;
+    color: var(--muted);
+}
+
+.academic-year-group h3 {
+    margin-bottom: 16px;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.course-list {
+    display: grid;
+    gap: 13px;
+}
+
+.course-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 20px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--background);
+    color: var(--text);
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(183, 139, 66, 0.55);
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: 0 10px 25px rgba(20, 45, 65, 0.08);
+}
+
+.course-card-main {
+    display: grid;
+    min-width: 0;
+}
+
+.course-card-main strong {
+    color: var(--primary);
+    line-height: 1.35;
+}
+
+.course-card-main span {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.course-card-arrow {
+    flex: 0 0 auto;
+    color: var(--accent);
+    font-size: 1.3rem;
+    transition: transform 0.2s ease;
+}
+
+.course-card:hover .course-card-arrow {
+    transform: translateX(4px);
+}
+
+/* Individual course pages */
+
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 19px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+    font-weight: 650;
+}
+
+.course-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.course-meta-item {
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.74);
+}
+
+.course-meta-item strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--primary);
+    font-size: 0.85rem;
+}
+
+.course-meta-item span {
+    color: var(--muted);
+    font-size: 0.94rem;
+}
+
+.course-content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(250px, 0.75fr);
+    align-items: start;
+    gap: 30px;
+}
+
+.course-section-stack {
+    display: grid;
+    gap: 22px;
+}
+
+.course-section {
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.course-section h2 {
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.55rem;
+    font-weight: 600;
+}
+
+.course-section p:last-child,
+.course-section ul:last-child {
+    margin-bottom: 0;
+}
+
+.course-sidebar {
+    position: sticky;
+    top: 96px;
+    padding: 27px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.course-sidebar h2 {
+    margin-bottom: 14px;
+    color: var(--primary);
+    font-size: 1.05rem;
+}
+
+.course-sidebar-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.course-sidebar-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.course-sidebar-list li:last-child {
+    border-bottom: none;
+}
+
+.course-sidebar-list a {
+    font-weight: 650;
+}
+
+.placeholder-note {
+    padding: 13px 15px;
+    border-left: 3px solid var(--accent);
+    background: rgba(183, 139, 66, 0.08);
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+@media (max-width: 900px) {
+    .course-meta-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .course-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-sidebar {
+        position: static;
+    }
+}
+
+@media (max-width: 700px) {
+    .teaching-heading-row {
+        display: grid;
+        gap: 10px;
+    }
+
+    .teaching-status {
+        justify-self: start;
+    }
+
+    .teaching-accordion summary {
+        padding: 23px;
+    }
+
+    .accordion-content {
+        padding: 0 23px 23px;
+    }
+
+    .course-card {
+        align-items: flex-start;
+        padding: 17px;
+    }
+
+    .course-meta-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .accordion-title {
+        font-size: 1.3rem;
+    }
+
+    .course-section {
+        padding: 23px;
+    }
+}
+
+
 /* Contact */
 
 section.contact-section {
