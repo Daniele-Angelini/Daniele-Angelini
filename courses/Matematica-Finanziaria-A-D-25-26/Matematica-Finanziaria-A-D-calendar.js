@@ -6,196 +6,295 @@
 const courseLessonEvents = [
     {
         "title": "Lecture 1",
-        "start": "2025-10-15T10:30:00",
-        "end": "2025-10-15T13:30:00",
+        "start": "2026-02-23T16:00:00",
+        "end": "2026-02-23T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 2",
-        "start": "2025-10-21T10:30:00",
-        "end": "2025-10-21T13:30:00",
+        "start": "2026-02-24T16:00:00",
+        "end": "2026-02-24T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 3",
-        "start": "2025-10-22T10:30:00",
-        "end": "2025-10-22T13:30:00",
+        "start": "2026-03-02T16:00:00",
+        "end": "2026-03-02T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 4",
-        "start": "2025-10-28T10:30:00",
-        "end": "2025-10-28T13:30:00",
+        "start": "2026-03-03T16:00:00",
+        "end": "2026-03-03T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 5",
-        "start": "2025-10-29T10:30:00",
-        "end": "2025-10-29T13:30:00",
+        "start": "2026-03-05T14:00:00",
+        "end": "2026-03-05T16:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 6",
-        "start": "2025-11-11T10:30:00",
-        "end": "2025-11-11T13:30:00",
+        "start": "2026-03-09T16:00:00",
+        "end": "2026-03-09T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 7",
-        "start": "2025-11-12T10:30:00",
-        "end": "2025-11-12T13:30:00",
+        "start": "2026-03-12T14:00:00",
+        "end": "2026-03-12T16:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 8",
-        "start": "2025-11-18T10:30:00",
-        "end": "2025-11-18T13:30:00",
+        "start": "2026-03-16T16:00:00",
+        "end": "2026-03-16T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 9",
-        "start": "2025-11-19T10:30:00",
-        "end": "2025-11-19T13:30:00",
+        "start": "2026-03-17T16:00:00",
+        "end": "2026-03-17T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 10",
-        "start": "2025-11-25T10:30:00",
-        "end": "2025-11-25T13:30:00",
+        "start": "2026-03-19T14:00:00",
+        "end": "2026-03-19T16:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 11",
-        "start": "2025-11-26T10:30:00",
-        "end": "2025-11-26T13:30:00",
+        "start": "2026-03-24T16:00:00",
+        "end": "2026-03-24T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 12",
-        "start": "2025-11-28T10:30:00",
-        "end": "2025-11-28T13:30:00",
+        "start": "2026-03-26T14:00:00",
+        "end": "2026-03-26T16:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 13",
-        "start": "2025-12-02T10:30:00",
-        "end": "2025-12-02T13:30:00",
+        "start": "2026-03-30T16:00:00",
+        "end": "2026-03-30T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 14",
-        "start": "2025-12-03T10:30:00",
-        "end": "2025-12-03T13:30:00",
+        "start": "2026-03-31T16:00:00",
+        "end": "2026-03-31T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 15",
-        "start": "2025-12-05T10:30:00",
-        "end": "2025-12-05T13:30:00",
+        "start": "2026-04-13T16:00:00",
+        "end": "2026-04-13T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 16",
-        "start": "2025-12-09T10:30:00",
-        "end": "2025-12-09T13:30:00",
+        "start": "2026-04-14T16:00:00",
+        "end": "2026-04-14T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 17",
-        "start": "2025-12-10T10:30:00",
-        "end": "2025-12-10T13:30:00",
+        "start": "2026-04-16T14:00:00",
+        "end": "2026-04-16T16:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 18",
-        "start": "2025-12-12T10:30:00",
-        "end": "2025-12-12T13:30:00",
+        "start": "2026-04-20T16:00:00",
+        "end": "2026-04-20T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
-        "title": "Lecture 19",
-        "start": "2025-12-16T10:30:00",
-        "end": "2025-12-16T13:30:00",
+        "title": "Lecture 29",
+        "start": "2026-04-21T16:00:00",
+        "end": "2026-04-21T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 20",
-        "start": "2025-12-17T10:30:00",
-        "end": "2025-12-17T13:30:00",
+        "start": "2026-04-23T14:00:00",
+        "end": "2026-04-23T16:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
     },
     {
         "title": "Lecture 21",
-        "start": "2025-12-19T10:30:00",
-        "end": "2025-12-19T13:30:00",
+        "start": "2026-04-27T16:00:00",
+        "end": "2026-04-27T18:00:00",
         "allDay": false,
         "extendedProps": {
-            "location": "---"
+            "location": "Aula 1"
         }
-    }
+    },
+    {
+        "title": "Lecture 22",
+        "start": "2026-04-28T16:00:00",
+        "end": "2026-04-28T18:00:00",
+        "allDay": false,
+        "extendedProps": {
+            "location": "Aula 1"
+        }
+    },
+    {
+        "title": "Lecture 23",
+        "start": "2026-04-30T14:00:00",
+        "end": "2026-04-30T16:00:00",
+        "allDay": false,
+        "extendedProps": {
+            "location": "Aula 1"
+        }
+    },
+        {
+        "title": "Lecture 24",
+        "start": "2026-05-04T16:00:00",
+        "end": "2026-05-04T18:00:00",
+        "allDay": false,
+        "extendedProps": {
+            "location": "Aula 1"
+        }
+    },
+    {
+        "title": "Lecture 25",
+        "start": "2026-05-05T16:00:00",
+        "end": "2026-05-05T18:00:00",
+        "allDay": false,
+        "extendedProps": {
+            "location": "Aula 1"
+        }
+    },
+    {
+        "title": "Lecture 26",
+        "start": "2026-05-07T14:00:00",
+        "end": "2026-05-07T16:00:00",
+        "allDay": false,
+        "extendedProps": {
+            "location": "Aula 1"
+        }
+    },
+        {
+        "title": "Lecture 27",
+        "start": "2026-05-11T16:00:00",
+        "end": "2026-05-11T18:00:00",
+        "allDay": false,
+        "extendedProps": {
+            "location": "Aula 1"
+        }
+    },
+    {
+        "title": "Lecture 28",
+        "start": "2026-05-12T16:00:00",
+        "end": "2026-05-12T18:00:00",
+        "allDay": false,
+        "extendedProps": {
+            "location": "Aula 1"
+        }
+    },
+    {
+        "title": "Lecture 29",
+        "start": "2026-05-14T14:00:00",
+        "end": "2026-05-14T16:00:00",
+        "allDay": false,
+        "extendedProps": {
+            "location": "Aula 1"
+        }
+    },
+        {
+        "title": "Lecture 30",
+        "start": "2026-05-18T16:00:00",
+        "end": "2026-05-18T18:00:00",
+        "allDay": false,
+        "extendedProps": {
+            "location": "Aula 1"
+        }
+    },
+    {
+        "title": "Lecture 31",
+        "start": "2026-05-19T16:00:00",
+        "end": "2026-05-19T18:00:00",
+        "allDay": false,
+        "extendedProps": {
+            "location": "Aula 1"
+        }
+    },
+    {
+        "title": "Lecture 32",
+        "start": "2026-05-21T14:00:00",
+        "end": "2026-05-21T16:00:00",
+        "allDay": false,
+        "extendedProps": {
+            "location": "Aula 1"
+        }
+    },
 ];
 
-const courseCalendarInitialDate = "2025-10-01";
+const courseCalendarInitialDate = "2026-02-23";
 
 function localDateKey(date) {
     const year = date.getFullYear();
