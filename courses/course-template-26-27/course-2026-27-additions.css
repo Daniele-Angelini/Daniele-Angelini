@@ -1,0 +1,144 @@
+.course-section-label {
+    margin-bottom: 6px;
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.course-start {
+    background: linear-gradient(
+        135deg,
+        rgba(238, 243, 246, 0.98),
+        rgba(230, 239, 245, 0.98)
+    );
+}
+
+.course-quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.course-quick-links a {
+    padding: 8px 13px;
+    border: 1px solid rgba(40, 95, 133, 0.22);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.announcement-card {
+    display: grid;
+    gap: 3px;
+    padding: 17px 19px;
+    border-left: 4px solid var(--accent);
+    background: var(--background);
+}
+
+.announcement-card strong,
+.resource-card strong,
+.assessment-grid strong {
+    color: var(--primary);
+}
+
+.announcement-card span,
+.resource-card span,
+.assessment-grid span {
+    color: var(--muted);
+}
+
+.weekly-module-list,
+.feedback-prompts {
+    display: grid;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.weekly-module {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--background);
+}
+
+.weekly-module summary {
+    padding: 17px 19px;
+    cursor: pointer;
+}
+
+.weekly-module summary > span {
+    display: grid;
+    gap: 2px;
+}
+
+.weekly-module summary strong {
+    color: var(--primary);
+}
+
+.weekly-module summary span span {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.weekly-module-content {
+    padding: 17px 19px;
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.resource-grid,
+.assessment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.resource-card,
+.assessment-grid > div {
+    display: grid;
+    gap: 5px;
+    padding: 19px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--background);
+}
+
+.transparency-box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid rgba(183, 139, 66, 0.28);
+    border-radius: 10px;
+    background: rgba(183, 139, 66, 0.08);
+}
+
+.transparency-box h3 {
+    margin-bottom: 7px;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.feedback-prompts p {
+    margin: 0;
+    padding: 13px 15px;
+    border-left: 3px solid var(--primary-light);
+    background: var(--background);
+}
+
+@media (max-width: 760px) {
+    .resource-grid,
+    .assessment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-quick-links {
+        display: grid;
+    }
+
+    .course-quick-links a {
+        text-align: center;
+    }
+}
