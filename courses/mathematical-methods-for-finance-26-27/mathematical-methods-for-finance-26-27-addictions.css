@@ -108,3 +108,24 @@
 .modules-content .transparency-box {
     margin-top: 22px;
 }
+
+@media (max-width: 700px) {
+
+    .modules-button {
+        padding: 16px 18px;
+        gap: 14px;
+    }
+
+    .modules-content {
+        padding: 16px;
+    }
+
+    .modules-button strong {
+        font-size: 1rem;
+    }
+
+    .modules-button small {
+        font-size: 0.78rem;
+    }
+
+}
