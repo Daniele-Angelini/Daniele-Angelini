@@ -1,59 +1,96 @@
-/* General course-modules dropdown */
+/* =========================================================
+   GENERAL COURSE-MODULES DROPDOWN
+   ========================================================= */
 
-.modules-container {
+details.modules-container {
+    width: 100%;
     margin-top: 24px;
+    border: none;
+    background: transparent;
 }
 
-.modules-button {
+/* Main blue button */
+
+details.modules-container > summary.modules-button {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
+
     width: 100%;
     padding: 18px 21px;
+
     border: 1px solid var(--primary);
     border-radius: 10px;
-    background: var(--primary);
+
+    background-color: var(--primary);
     color: #ffffff;
+
     cursor: pointer;
     list-style: none;
     user-select: none;
+
+    appearance: none;
+    -webkit-appearance: none;
+
     transition:
-        background 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease,
         border-radius 0.2s ease;
 }
 
-.modules-button::-webkit-details-marker {
+/* Remove the browser's default arrow */
+
+details.modules-container > summary.modules-button::-webkit-details-marker {
     display: none;
 }
 
-.modules-button:hover {
-    background: var(--primary-light);
+details.modules-container > summary.modules-button::marker {
+    content: "";
 }
 
-.modules-button:focus-visible {
+/* Hover */
+
+details.modules-container > summary.modules-button:hover {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+/* Keyboard navigation */
+
+details.modules-container > summary.modules-button:focus-visible {
     outline: 3px solid rgba(40, 95, 133, 0.3);
     outline-offset: 3px;
 }
 
-.modules-button > span:first-child {
+/* Title and subtitle */
+
+details.modules-container
+    > summary.modules-button
+    > span:first-child {
     display: grid;
     gap: 2px;
+    min-width: 0;
     text-align: left;
 }
 
-.modules-button strong {
+details.modules-container > summary.modules-button strong {
     color: #ffffff;
     font-size: 1.05rem;
+    line-height: 1.3;
 }
 
-.modules-button small {
-    color: rgba(255, 255, 255, 0.75);
+details.modules-container > summary.modules-button small {
+    display: block;
+    color: rgba(255, 255, 255, 0.78);
     font-size: 0.84rem;
     font-weight: 500;
+    line-height: 1.35;
 }
 
-/* Plus/minus icon */
+/* =========================================================
+   PLUS / MINUS ICON
+   ========================================================= */
 
 .modules-button-icon {
     position: relative;
@@ -68,10 +105,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
+
     width: 15px;
     height: 2px;
+
     border-radius: 2px;
-    background: #ffffff;
+    background-color: #ffffff;
+
     transform: translate(-50%, -50%);
     transition: transform 0.2s ease;
 }
@@ -80,52 +120,83 @@
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
-.modules-container[open] .modules-button-icon::after {
+/* The vertical line disappears when the dropdown is open */
+
+details.modules-container[open]
+    > summary.modules-button
+    .modules-button-icon::after {
     transform: translate(-50%, -50%) rotate(0deg);
 }
 
-/* Open state */
+/* =========================================================
+   OPEN STATE
+   ========================================================= */
 
-.modules-container[open] > .modules-button {
+details.modules-container[open] > summary.modules-button {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
     border-radius: 10px 10px 0 0;
-    background: var(--primary-light);
 }
 
-.modules-content {
+/* Content below the blue button */
+
+details.modules-container > .modules-content {
     padding: 22px;
+
     border: 1px solid var(--border);
     border-top: none;
     border-radius: 0 0 10px 10px;
-    background: var(--background);
+
+    background-color: var(--background);
 }
 
-.modules-content .weekly-module-list {
+details.modules-container
+    > .modules-content
+    .weekly-module-list {
     margin-top: 0;
 }
 
-/* Yellow box inside the general dropdown */
+/* Yellow information box inside the dropdown */
 
-.modules-content .transparency-box {
+details.modules-container
+    > .modules-content
+    .transparency-box {
     margin-top: 22px;
 }
 
+/* =========================================================
+   SMARTPHONE
+   ========================================================= */
+
 @media (max-width: 700px) {
 
-    .modules-button {
-        padding: 16px 18px;
+    details.modules-container > summary.modules-button {
         gap: 14px;
+        padding: 16px 18px;
     }
 
-    .modules-content {
+    details.modules-container > .modules-content {
         padding: 16px;
     }
 
-    .modules-button strong {
+    details.modules-container > summary.modules-button strong {
         font-size: 1rem;
     }
 
-    .modules-button small {
+    details.modules-container > summary.modules-button small {
         font-size: 0.78rem;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    details.modules-container > summary.modules-button {
+        padding: 15px 16px;
+    }
+
+    details.modules-container > .modules-content {
+        padding: 14px;
     }
 
 }
