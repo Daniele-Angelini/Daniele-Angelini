@@ -1,0 +1,110 @@
+/* General course-modules dropdown */
+
+.modules-container {
+    margin-top: 24px;
+}
+
+.modules-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    padding: 18px 21px;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    background: var(--primary);
+    color: #ffffff;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    transition:
+        background 0.2s ease,
+        border-radius 0.2s ease;
+}
+
+.modules-button::-webkit-details-marker {
+    display: none;
+}
+
+.modules-button:hover {
+    background: var(--primary-light);
+}
+
+.modules-button:focus-visible {
+    outline: 3px solid rgba(40, 95, 133, 0.3);
+    outline-offset: 3px;
+}
+
+.modules-button > span:first-child {
+    display: grid;
+    gap: 2px;
+    text-align: left;
+}
+
+.modules-button strong {
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+.modules-button small {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.84rem;
+    font-weight: 500;
+}
+
+/* Plus/minus icon */
+
+.modules-button-icon {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+}
+
+.modules-button-icon::before,
+.modules-button-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 2px;
+    border-radius: 2px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease;
+}
+
+.modules-button-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.modules-container[open] .modules-button-icon::after {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* Open state */
+
+.modules-container[open] > .modules-button {
+    border-radius: 10px 10px 0 0;
+    background: var(--primary-light);
+}
+
+.modules-content {
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    background: var(--background);
+}
+
+.modules-content .weekly-module-list {
+    margin-top: 0;
+}
+
+/* Yellow box inside the general dropdown */
+
+.modules-content .transparency-box {
+    margin-top: 22px;
+}
