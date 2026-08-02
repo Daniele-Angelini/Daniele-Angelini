@@ -22,6 +22,13 @@
     <link rel="stylesheet" href="course-2026-27-additions.css">
 
     <script src="../../script.js" defer></script>
+
+    <!-- FullCalendar: pinned global bundle, no build step required -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.21/index.global.min.js"
+        defer
+    ></script>
+    <script src="course-calendar.js" defer></script>
 </head>
 
 <body>
@@ -64,6 +71,7 @@
     </div>
 </header>
 
+
 <main>
 
     <header class="page-header">
@@ -82,11 +90,11 @@
             <h1>Mathematical Methods for Finance</h1>
 
             <p class="page-intro">
-                This course develops the mathematical foundations required
-                for advanced study in quantitative finance. It introduces
-                functional analysis, measure-theoretic probability and
-                stochastic calculus, with particular attention to the tools
-                used in asset pricing, risk theory and financial modelling.
+                A structured course in functional analysis, measure-theoretic
+                probability and stochastic calculus. The full official
+                programme is preserved, while lectures are organised around
+                intuition, clear mathematical arguments, worked examples and
+                guided exam-style exercises.
             </p>
 
             <div class="course-meta-grid">
@@ -98,14 +106,22 @@
 
                 <div class="course-meta-item">
                     <strong>Degree programme</strong>
-                    <span>
-                        Quantitative Finance and Data Science for Economics
-                    </span>
+                    <span>Quantitative Finance and Data Science for Economics</span>
                 </div>
 
                 <div class="course-meta-item">
                     <strong>Credits and hours</strong>
-                    <span>9 CFU · 63 contact hours</span>
+                    <span>9 CFU · 63 contact hours · 21 lessons</span>
+                </div>
+
+                <div class="course-meta-item">
+                    <strong>Weekly timetable</strong>
+                    <span>Wednesday and Thursday · 14:30–17:30</span>
+                </div>
+
+                <div class="course-meta-item">
+                    <strong>Teaching period</strong>
+                    <span>23 September–2 December 2026</span>
                 </div>
 
                 <div class="course-meta-item">
@@ -125,32 +141,37 @@
 
                 <article class="course-section course-start" id="start-here">
                     <p class="course-section-label">Start here</p>
-                    <h2>Welcome to the course</h2>
+                    <h2>Welcome and learning agreement</h2>
 
                     <p>
-                        The course is mathematically demanding, but it is
-                        designed for students in economics who have chosen a
-                        quantitative finance programme. Formal theory will be
-                        systematically accompanied by worked examples,
-                        guided exercises and financial applications.
+                        The course is mathematically demanding, but no topic
+                        will be presented as a sequence of formulas to be
+                        memorised. Each subject will be developed through a
+                        stable sequence:
+                        <strong>intuition, definition, example,
+                        counterexample, theorem and exercise</strong>.
                     </p>
 
                     <p>
-                        The official class timetable has not yet been
-                        published. The page is therefore organised by
-                        thematic modules rather than by weeks or individual
-                        lessons. Dates, times and the detailed lesson
-                        calendar will be added as soon as they become
-                        available.
+                        The complete programme remains unchanged. The large
+                        slide and exercise collections are reference
+                        libraries: the page will always distinguish
+                        <strong>core material</strong>,
+                        <strong>recommended practice</strong> and
+                        <strong>optional extensions</strong>, so that the
+                        expected workload is visible and manageable.
                     </p>
 
                     <div class="course-quick-links">
+                        <a href="#teaching-commitments">Teaching commitments</a>
+                        <a href="#lesson-format">Lesson format</a>
                         <a href="#prerequisites">Prerequisites</a>
-                        <a href="#roadmap">Course roadmap</a>
-                        <a href="#schedule">Schedule</a>
-                        <a href="#lecture-diary">Lecture diary</a>
+                        <a href="#roadmap">Roadmap</a>
+                        <a href="#schedule">Calendar</a>
+                        <a href="#workload">Workload</a>
                         <a href="#materials">Materials</a>
                         <a href="#assessment">Assessment</a>
+                        <a href="#support">Support</a>
                     </div>
                 </article>
 
@@ -159,12 +180,169 @@
                     <h2>Announcements</h2>
 
                     <div class="announcement-card">
-                        <strong>Course page under preparation</strong>
+                        <strong>Confirmed timetable</strong>
                         <span>
-                            The syllabus structure is available. The official
-                            timetable, lesson dates and final assessment
-                            scheme will be published when confirmed.
+                            Lessons begin on Wednesday 23 September 2026 and
+                            take place every Wednesday and Thursday from
+                            14:30 to 17:30. The final scheduled lesson is
+                            Wednesday 2 December 2026.
                         </span>
+                    </div>
+
+                    <div class="announcement-card">
+                        <strong>Materials before teaching begins</strong>
+                        <span>
+                            The prerequisite package, complete module
+                            reference slides, assessment sheet and first
+                            exercise materials will be available before the
+                            first lesson.
+                        </span>
+                    </div>
+                </article>
+
+                <article class="course-section" id="teaching-commitments">
+                    <p class="course-section-label">Course design</p>
+                    <h2>Teaching commitments</h2>
+
+                    <p>
+                        The course structure directly addresses preparation,
+                        clarity, workload, exercises, material availability,
+                        assessment transparency and access to support.
+                    </p>
+
+                    <div class="commitment-grid">
+
+                        <div class="commitment-card">
+                            <span class="commitment-number" aria-hidden="true">1</span>
+                            <strong>Prerequisites first</strong>
+                            <p>
+                                A diagnostic test, two bridge lessons and a
+                                complete revision package establish a common
+                                starting point.
+                            </p>
+                        </div>
+
+                        <div class="commitment-card">
+                            <span class="commitment-number" aria-hidden="true">2</span>
+                            <strong>Visible workload</strong>
+                            <p>
+                                Weekly work is divided into core, recommended
+                                and advanced exercises. The full banks are not
+                                compulsory homework.
+                            </p>
+                        </div>
+
+                        <div class="commitment-card">
+                            <span class="commitment-number" aria-hidden="true">3</span>
+                            <strong>Materials in advance</strong>
+                            <p>
+                                Lecture selections are published before class;
+                                tablet annotations and solutions follow after
+                                class.
+                            </p>
+                        </div>
+
+                        <div class="commitment-card">
+                            <span class="commitment-number" aria-hidden="true">4</span>
+                            <strong>Clear assessment</strong>
+                            <p>
+                                Duration, structure, scoring, permitted
+                                materials and representative questions are
+                                collected in one assessment sheet.
+                            </p>
+                        </div>
+
+                        <div class="commitment-card">
+                            <span class="commitment-number" aria-hidden="true">5</span>
+                            <strong>Exercises every lesson</strong>
+                            <p>
+                                The final 50-minute block is reserved for
+                                worked, guided and independent exercises.
+                            </p>
+                        </div>
+
+                        <div class="commitment-card">
+                            <span class="commitment-number" aria-hidden="true">6</span>
+                            <strong>Accessible support</strong>
+                            <p>
+                                Weekly office hours, email support, an updated
+                                FAQ and mid-course feedback provide routes for
+                                clarification.
+                            </p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="course-section" id="lesson-format">
+                    <p class="course-section-label">Teaching method</p>
+                    <h2>How each three-hour lesson works</h2>
+
+                    <p>
+                        Every lesson runs from 14:30 to 17:30 and includes two
+                        planned 15-minute breaks. Starting and finishing times
+                        will be respected.
+                    </p>
+
+                    <div class="lesson-format-grid">
+
+                        <div class="lesson-format-card">
+                            <span class="lesson-time">14:30–15:20</span>
+                            <strong>Concept and intuition</strong>
+                            <p>
+                                Motivation, prerequisite recall, diagrams,
+                                definitions and a first elementary example.
+                            </p>
+                        </div>
+
+                        <div class="lesson-break" aria-label="15-minute break">
+                            <span>15-minute break</span>
+                        </div>
+
+                        <div class="lesson-format-card">
+                            <span class="lesson-time">15:35–16:25</span>
+                            <strong>Theory and worked examples</strong>
+                            <p>
+                                Theorems, selected proofs, counterexamples and
+                                complete calculations written in an ordered
+                                form.
+                            </p>
+                        </div>
+
+                        <div class="lesson-break" aria-label="15-minute break">
+                            <span>15-minute break</span>
+                        </div>
+
+                        <div class="lesson-format-card">
+                            <span class="lesson-time">16:40–17:30</span>
+                            <strong>Exercise laboratory</strong>
+                            <p>
+                                One worked exercise, one guided exercise, one
+                                independent task and a short correction.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="transparency-box">
+                        <h3>Tablet and annotated notes</h3>
+                        <p>
+                            Derivations and exercise solutions will be written
+                            on a tablet directly over the lecture slides.
+                            The annotated PDF will be uploaded after the
+                            lesson, avoiding fragmented notes spread across a
+                            traditional board.
+                        </p>
+                    </div>
+
+                    <div class="transparency-box">
+                        <h3>Computational demonstrations</h3>
+                        <p>
+                            When numerical demonstrations are useful, they
+                            will use one consistent, free environment and
+                            ready-to-run notebooks. Programming syntax is not
+                            an examination objective.
+                        </p>
                     </div>
                 </article>
 
@@ -173,32 +351,57 @@
                     <h2>Prerequisites and mathematical bridge</h2>
 
                     <p>
-                        Students are expected to be familiar with the
-                        following topics at an elementary undergraduate
-                        level:
+                        The assumed background comes from undergraduate
+                        General Mathematics and Statistics. The course does
+                        not assume that every student remembers each topic
+                        fluently.
                     </p>
 
                     <ul class="check-list">
-                        <li>algebraic manipulation, logarithms and exponential functions;</li>
-                        <li>limits, derivatives and elementary integration;</li>
-                        <li>sequences, series and basic convergence concepts;</li>
-                        <li>vectors, matrices and elementary linear algebra;</li>
-                        <li>elementary probability and random variables;</li>
-                        <li>standard mathematical notation and logical reasoning.</li>
+                        <li>sets, functions, equations and elementary mathematical notation;</li>
+                        <li>limits, continuity, derivatives, optimisation and basic integrals;</li>
+                        <li>vectors, matrices, matrix multiplication and linear independence;</li>
+                        <li>descriptive statistics, probability and random variables;</li>
+                        <li>expectation, variance, covariance and conditional probability.</li>
                     </ul>
 
-                    <div class="transparency-box">
-                        <h3>Diagnostic and revision material</h3>
-                        <p>
-                            Before the course begins, this section will
-                            contain a non-graded diagnostic test, complete
-                            solutions and concise revision notes. The purpose
-                            is to identify gaps early and provide a clear
-                            route for independent revision.
-                        </p>
+                    <div class="support-pathway">
+
+                        <div>
+                            <strong>Before 23 September</strong>
+                            <span>
+                                Non-graded diagnostic test with complete
+                                solutions and a topic-by-topic revision guide.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>Lessons 1–2</strong>
+                            <span>
+                                Mathematical bridge: calculus, linear algebra,
+                                probability and notation.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>During the course</strong>
+                            <span>
+                                Short prerequisite recalls before each new
+                                topic and one-star bridge exercises.
+                            </span>
+                        </div>
+
                     </div>
 
-                    <!-- Add links only after the corresponding files exist. -->
+                    <div class="transparency-box">
+                        <h3>Purpose of the diagnostic</h3>
+                        <p>
+                            The diagnostic is not graded and does not affect
+                            the examination. It identifies which revision
+                            route is most useful before the advanced modules
+                            begin.
+                        </p>
+                    </div>
                 </article>
 
                 <article class="course-section" id="outcomes">
@@ -208,642 +411,654 @@
                     <p>By the end of the course, students should be able to:</p>
 
                     <ul class="check-list">
-                        <li>use metric, normed, Banach and Hilbert space concepts in mathematical and financial problems;</li>
-                        <li>work with measures, measurable functions, Lebesgue integration and the main convergence theorems;</li>
-                        <li>analyse random variables, conditional expectations and different modes of convergence;</li>
-                        <li>apply characteristic functions, the law of large numbers and the central limit theorem;</li>
-                        <li>describe stochastic processes, filtrations, martingales and Brownian motion;</li>
+                        <li>work with metric, normed, Banach and Hilbert spaces;</li>
+                        <li>use measures, measurable functions, Lebesgue integration and convergence theorems;</li>
+                        <li>analyse random variables, conditional expectations and modes of convergence;</li>
+                        <li>use characteristic functions, the law of large numbers and the central limit theorem;</li>
+                        <li>describe stochastic processes, filtrations, martingales, Markov processes and Brownian motion;</li>
                         <li>compute quadratic variations and stochastic integrals and apply Itô's formula;</li>
-                        <li>interpret changes of measure, stochastic differential equations and Feynman–Kac formulas in quantitative finance;</li>
-                        <li>present mathematical arguments and solutions clearly, rigorously and efficiently.</li>
+                        <li>use changes of measure, solve elementary SDEs and connect stochastic dynamics with PDEs;</li>
+                        <li>present solutions clearly, verify hypotheses and interpret mathematical results.</li>
                     </ul>
                 </article>
 
                 <article class="course-section" id="roadmap">
                     <p class="course-section-label">Syllabus</p>
-                    <h2>Course roadmap</h2>
+                    <h2>Six-module course roadmap</h2>
 
                     <p>
-                        The roadmap is organised by mathematical progression,
-                        not by calendar week. The allocation of teaching hours
-                        will be finalised after publication of the official
-                        timetable.
+                        The official programme is organised into six modules.
+                        A two-lesson prerequisite bridge precedes the modules,
+                        and the final lesson is devoted to consolidation and
+                        a complete mock examination. Topics from the
+                        completion package are integrated into their natural
+                        module rather than counted as an additional module.
                     </p>
 
                     <details class="modules-container">
 
                         <summary class="modules-button">
-                    
                             <span>
-                                <strong>Course modules</strong>
-                                <small>View the complete course structure</small>
+                                <strong>Course structure</strong>
+                                <small>
+                                    Prerequisite bridge · 6 modules · final
+                                    consolidation
+                                </small>
                             </span>
-                    
+
                             <span
                                 class="modules-button-icon"
                                 aria-hidden="true"
                             ></span>
-                    
                         </summary>
-                    
+
                         <div class="modules-content">
-                    
+
                             <div class="weekly-module-list">
-                    
-                                <!-- MODULE 0 -->
-                    
-                                <details class="weekly-module" >
-                    
+
+                                <details class="weekly-module">
                                     <summary>
                                         <span>
-                                            <strong>Module 0</strong>
-                    
-                                            <span>
-                                                Mathematical bridge and diagnostic review
-                                            </span>
+                                            <strong>Preparatory bridge</strong>
+                                            <span>Prerequisites and diagnostic review</span>
                                         </span>
+                                        <span class="module-count">2 lessons</span>
                                     </summary>
-                    
                                     <div class="weekly-module-content">
-                    
-                                        <p>
-                                            <strong>Core topics:</strong>
-                                            notation, elementary calculus, sequences,
-                                            matrices and probability review.
+                                        <p class="module-dates">
+                                            23–24 September 2026
                                         </p>
-                    
                                         <p>
-                                            <strong>Learning purpose:</strong>
-                                            establish a common mathematical starting point
-                                            and identify prerequisites that require revision.
+                                            <strong>Topics:</strong>
+                                            notation, elementary calculus,
+                                            sequences, vectors, matrices,
+                                            matrix multiplication, linear
+                                            independence, probability,
+                                            expectation and variance.
                                         </p>
-                    
                                         <p>
-                                            <strong>Practice:</strong>
-                                            diagnostic questions and guided revision
-                                            exercises.
+                                            <strong>Purpose:</strong>
+                                            establish a common starting point
+                                            without removing any content from
+                                            the official programme.
                                         </p>
-                    
                                     </div>
-                    
                                 </details>
-                    
-                                <!-- MODULE 1 -->
-                    
+
                                 <details class="weekly-module">
-                    
                                     <summary>
                                         <span>
                                             <strong>Module 1</strong>
-                    
-                                            <span>
-                                                Metric, normed and Hilbert spaces
-                                            </span>
+                                            <span>Functional analysis</span>
                                         </span>
+                                        <span class="module-count">3 lessons</span>
                                     </summary>
-                    
                                     <div class="weekly-module-content">
-                    
+                                        <p class="module-dates">
+                                            30 September, 1 and 7 October 2026
+                                        </p>
                                         <p>
                                             <strong>Core topics:</strong>
-                                            metric spaces, convergence, completeness,
-                                            compactness, normed spaces, Banach spaces,
-                                            Hölder and Minkowski inequalities, Hilbert
-                                            spaces, orthogonality, projection and Bessel
-                                            inequality.
+                                            metric spaces, convergence,
+                                            completeness, Baire category,
+                                            compactness, Heine–Borel, vector
+                                            and normed spaces, Hölder and
+                                            Minkowski inequalities, sequence
+                                            and function spaces, Banach,
+                                            Hölder and Hilbert spaces,
+                                            orthogonality, projection, Bessel
+                                            inequality and linear operators.
                                         </p>
-                    
                                         <p>
-                                            <strong>Selected extensions:</strong>
-                                            sequence spaces, function spaces, smooth
-                                            functions and linear operators.
+                                            <strong>Integrated topics:</strong>
+                                            smooth and Schwartz spaces,
+                                            finite- versus infinite-dimensional
+                                            reasoning and approximation.
                                         </p>
-                    
-                                        <p>
-                                            <strong>Practice focus:</strong>
-                                            verifying metrics and norms, studying convergence
-                                            and completeness, orthogonal projections and
-                                            approximation problems.
-                                        </p>
-                    
                                     </div>
-                    
                                 </details>
-                    
-                                <!-- MODULE 2 -->
 
                                 <details class="weekly-module">
-                
                                     <summary>
                                         <span>
                                             <strong>Module 2</strong>
-                
-                                            <span>
-                                                Measure theory, integration and Fourier
-                                                methods
-                                            </span>
+                                            <span>Measure, integration and Fourier analysis</span>
                                         </span>
+                                        <span class="module-count">3 lessons</span>
                                     </summary>
-                
                                     <div class="weekly-module-content">
-                
+                                        <p class="module-dates">
+                                            8, 14 and 15 October 2026
+                                        </p>
                                         <p>
                                             <strong>Core topics:</strong>
-                                            sigma-algebras, Borel sets, measures, measurable
-                                            functions, Lebesgue integral, integrable
-                                            functions, equivalence classes, monotone
-                                            convergence, Fatou's lemma, dominated convergence
-                                            and
+                                            sigma-algebras, Borel sets,
+                                            measures, measurable functions,
+                                            Lebesgue integral, integrability,
+                                            equivalence classes, monotone
+                                            convergence, Fatou, dominated
+                                            convergence, product measures,
+                                            Fubini–Tonelli and
                                             <em>L</em><sup>p</sup> spaces.
                                         </p>
-                
                                         <p>
                                             <strong>Fourier topics:</strong>
-                                            trigonometric polynomials, Fourier series,
-                                            Fourier transform, Plancherel theorem and
-                                            convolution.
+                                            trigonometric polynomials, Fourier
+                                            series and transform, Plancherel,
+                                            convolution and FFT.
                                         </p>
-                
-                                        <p>
-                                            <strong>Selected extensions:</strong>
-                                            Schwartz spaces and the Fast Fourier Transform.
-                                        </p>
-                
                                     </div>
-                
                                 </details>
-                
-                                <!-- MODULE 3 -->
-                
+
                                 <details class="weekly-module">
-                
                                     <summary>
                                         <span>
                                             <strong>Module 3</strong>
-                
-                                            <span>
-                                                Probability and conditional methods
-                                            </span>
+                                            <span>Probability and conditional methods</span>
                                         </span>
+                                        <span class="module-count">3 lessons</span>
                                     </summary>
-                
                                     <div class="weekly-module-content">
-                
+                                        <p class="module-dates">
+                                            21, 22 and 28 October 2026
+                                        </p>
                                         <p>
                                             <strong>Core topics:</strong>
-                                            probability spaces, random variables,
-                                            distributions, expectation, variance, covariance,
-                                            correlation, independence, conditional
-                                            probability, conditional distribution and
-                                            conditional expectation.
+                                            probability spaces, random
+                                            variables, distributions,
+                                            expectation, Jensen, variance,
+                                            covariance, correlation,
+                                            Cholesky decomposition,
+                                            independence, conditional laws,
+                                            characteristic functions,
+                                            inversion, sequences of random
+                                            variables, modes of convergence,
+                                            Markov inequality, LLN, CLT and
+                                            Lévy continuity.
                                         </p>
-                
                                         <p>
-                                            <strong>Analytical tools:</strong>
-                                            Jensen inequality, Fubini theorem, characteristic
-                                            functions, inversion and Radon–Nikodym methods.
+                                            <strong>Conditional methods:</strong>
+                                            Radon–Nikodym, Bayes, conditional
+                                            expectation, conditional
+                                            marginals and Least Squares Monte
+                                            Carlo.
                                         </p>
-                
-                                        <p>
-                                            <strong>Applications:</strong>
-                                            Cholesky decomposition, Bayes formula and
-                                            construction of conditional marginals.
-                                        </p>
-                
                                     </div>
-                
                                 </details>
-                
-                                <!-- MODULE 4 -->
-                
+
                                 <details class="weekly-module">
-                
                                     <summary>
                                         <span>
                                             <strong>Module 4</strong>
-                
-                                            <span>
-                                                Convergence and limit theorems
-                                            </span>
+                                            <span>Stochastic processes and martingales</span>
                                         </span>
+                                        <span class="module-count">3 lessons</span>
                                     </summary>
-                
                                     <div class="weekly-module-content">
-                
+                                        <p class="module-dates">
+                                            29 October, 4 and 5 November 2026
+                                        </p>
                                         <p>
                                             <strong>Core topics:</strong>
-                                            sequences of random variables, almost sure,
-                                            probability, mean-square and weak convergence,
-                                            Markov inequality, law of large numbers and
-                                            central limit theorem.
+                                            process laws, finite-dimensional
+                                            distributions, measurable
+                                            processes, filtrations,
+                                            martingales, Markov and Feller
+                                            processes, Chapman–Kolmogorov,
+                                            generators, backward and forward
+                                            Kolmogorov equations, Brownian
+                                            motion, Wiener space, Poisson
+                                            processes and stopping times.
                                         </p>
-                
                                         <p>
-                                            <strong>Further tools:</strong>
-                                            necessary and sufficient conditions for weak
-                                            convergence and Lévy's continuity theorem.
+                                            <strong>Martingale refinements:</strong>
+                                            continuous, càdlàg, square
+                                            integrable, local and uniformly
+                                            integrable martingales.
                                         </p>
-                
-                                        <p>
-                                            <strong>Practice focus:</strong>
-                                            distinguishing convergence concepts and selecting
-                                            the appropriate theorem in probabilistic
-                                            problems.
-                                        </p>
-                
                                     </div>
-                
                                 </details>
-                
-                                <!-- MODULE 5 -->
-                
+
                                 <details class="weekly-module">
-                
                                     <summary>
                                         <span>
                                             <strong>Module 5</strong>
-                
-                                            <span>
-                                                Stochastic processes, martingales and
-                                                Brownian motion
-                                            </span>
+                                            <span>Stochastic integration and Itô calculus</span>
                                         </span>
+                                        <span class="module-count">3 lessons</span>
                                     </summary>
-                
                                     <div class="weekly-module-content">
-                
+                                        <p class="module-dates">
+                                            11, 12 and 18 November 2026
+                                        </p>
                                         <p>
                                             <strong>Core topics:</strong>
-                                            stochastic processes, finite-dimensional
-                                            distributions, measurable processes,
-                                            filtrations, martingales, Markov processes,
-                                            Brownian motion, Wiener space, stopping times
-                                            and Poisson processes.
+                                            variation, Riemann–Stieltjes
+                                            integration, semimartingales,
+                                            Doob decomposition, quadratic
+                                            variation, stochastic integrals
+                                            of indicator and simple
+                                            processes, extension in
+                                            <em>L</em><sup>2</sup> and local
+                                            <em>L</em><sup>2</sup>, Itô
+                                            processes and Itô's formula.
                                         </p>
-                
                                         <p>
-                                            <strong>Selected extensions:</strong>
-                                            Feller processes, Chapman–Kolmogorov equations,
-                                            forward and backward Kolmogorov equations, and
-                                            classes of continuous and càdlàg martingales.
+                                            <strong>Extensions:</strong>
+                                            continuous semimartingales,
+                                            multidimensional calculus,
+                                            integration by parts and Lévy
+                                            characterisation.
                                         </p>
-                
                                     </div>
-                
                                 </details>
-                
-                                <!-- MODULE 6 -->
-                
+
                                 <details class="weekly-module">
-                
                                     <summary>
                                         <span>
                                             <strong>Module 6</strong>
-                
-                                            <span>
-                                                Stochastic integration and Itô calculus
-                                            </span>
+                                            <span>Measure changes, SDEs and Feynman–Kac</span>
                                         </span>
+                                        <span class="module-count">3 lessons</span>
                                     </summary>
-                
                                     <div class="weekly-module-content">
-                
+                                        <p class="module-dates">
+                                            19, 25 and 26 November 2026
+                                        </p>
                                         <p>
                                             <strong>Core topics:</strong>
-                                            variation, Riemann–Stieltjes integration,
-                                            semimartingales, quadratic variation, stochastic
-                                            integration, Itô processes and Itô's formula.
+                                            changes of measure, density
+                                            processes, exponential
+                                            martingales, integrability,
+                                            Girsanov theorem, Brownian
+                                            martingale representation,
+                                            stochastic differential equations
+                                            and Feynman–Kac formulas.
                                         </p>
-                
                                         <p>
-                                            <strong>Development:</strong>
-                                            integration of indicator and simple processes,
-                                            construction in
-                                            <em>L</em><sup>2</sup>, local
-                                            <em>L</em><sup>2</sup>
-                                            methods and integration with respect to
-                                            continuous semimartingales.
+                                            <strong>Practice focus:</strong>
+                                            identifying the correct measure,
+                                            transforming drift, solving
+                                            elementary SDEs and verifying the
+                                            associated PDE.
                                         </p>
-                
-                                        <p>
-                                            <strong>Applications:</strong>
-                                            Brownian and multidimensional Itô formulas.
-                                        </p>
-                
                                     </div>
-                
                                 </details>
-                
-                                <!-- MODULE 7 -->
-                
+
                                 <details class="weekly-module">
-                
                                     <summary>
                                         <span>
-                                            <strong>Module 7</strong>
-                
-                                            <span>
-                                                Measure changes, SDEs and financial
-                                                applications
-                                            </span>
+                                            <strong>Final consolidation</strong>
+                                            <span>Integrated revision and mock examination</span>
                                         </span>
+                                        <span class="module-count">1 lesson</span>
                                     </summary>
-                
                                     <div class="weekly-module-content">
-                
-                                        <p>
-                                            <strong>Core topics:</strong>
-                                            exponential martingales, Girsanov theorem,
-                                            stochastic differential equations and
-                                            Feynman–Kac formulas.
+                                        <p class="module-dates">
+                                            2 December 2026
                                         </p>
-                
                                         <p>
-                                            <strong>Selected extensions:</strong>
-                                            Lévy characterization, Brownian martingale
-                                            representation and Least Squares Monte Carlo.
+                                            Programme map, complete mock
+                                            written examination, correction,
+                                            common-error clinic and final
+                                            assessment guidance. No new topic
+                                            is introduced in the final lesson.
                                         </p>
-                
-                                        <p>
-                                            <strong>Financial perspective:</strong>
-                                            risk-neutral dynamics, valuation problems and
-                                            links with asset pricing and risk theory.
-                                        </p>
-                
                                     </div>
-                
                                 </details>
-                
-                                <!-- MODULE 8 -->
-                
-                                <details class="weekly-module">
-                
-                                    <summary>
-                                        <span>
-                                            <strong>Module 8</strong>
-                
-                                            <span>
-                                                Consolidation and examination preparation
-                                            </span>
-                                        </span>
-                                    </summary>
-                
-                                    <div class="weekly-module-content">
-                
-                                        <p>
-                                            Integrated exercises, links among the three
-                                            parts of the course, examination guidance and
-                                            at least one complete mock written examination.
-                                        </p>
-                
-                                    </div>
-                
-                                </details>
-                
+
                             </div>
-                
-                            <!-- YELLOW PLACEHOLDER INSIDE THE GENERAL DROPDOWN -->
-                
+
                             <div class="transparency-box">
-                
-                                <h3>
-                                    Core, selected and optional material
-                                </h3>
-                
+                                <h3>Programme traceability</h3>
                                 <p>
-                                    The final course page will clearly distinguish
-                                    material that is fully examinable from selected
-                                    extensions and optional enrichment topics. Any
-                                    change in scope will be recorded on this page.
+                                    The lecture diary below records what was
+                                    actually completed in every lesson. Any
+                                    change to the planned sequence will be
+                                    documented together with the corresponding
+                                    slides and exercises.
                                 </p>
-                
                             </div>
-                
+
                         </div>
-                
                     </details>
-                
                 </article>
 
                 <article class="course-section" id="schedule">
                     <p class="course-section-label">Timetable</p>
-                    <h2>Lesson schedule and calendar</h2>
+                    <h2>Lesson schedule and interactive calendar</h2>
 
                     <p>
-                        The official timetable is not yet available.
-                        Consequently, it is not yet known whether the 63
-                        contact hours will be organised mainly in two-hour or
-                        three-hour teaching blocks.
+                        There are 21 three-hour meetings. Lessons take place
+                        every Wednesday and Thursday from 14:30 to 17:30,
+                        beginning on 23 September 2026. The calendar shows
+                        the planned topic of every meeting.
                     </p>
 
-                    <div class="placeholder-note">
-                        The interactive calendar with lesson dates, starting
-                        times, ending times, rooms and assessment dates will
-                        be published here as soon as the timetable is
-                        confirmed.
+                    <div class="calendar-legend">
+                        <span class="calendar-legend-marker" aria-hidden="true"></span>
+                        <span>Scheduled Mathematical Methods lesson · 14:30–17:30</span>
+                    </div>
+
+                    <div class="calendar-shell">
+                        <p class="calendar-loading" id="calendar-loading">
+                            Loading the lesson calendar…
+                        </p>
+                        <div
+                            id="course-calendar"
+                            aria-label="Interactive lesson calendar for Mathematical Methods for Finance"
+                        ></div>
+                        <noscript>
+                            <p class="calendar-warning">
+                                JavaScript is disabled. The complete lesson
+                                list remains available below.
+                            </p>
+                        </noscript>
+                    </div>
+
+                    <div
+                        class="calendar-event-details"
+                        id="calendar-event-details"
+                        aria-live="polite"
+                    >
+                        Select a lesson in the calendar to display its full
+                        title and module.
+                    </div>
+
+                    <details class="lesson-plan-container">
+                        <summary>
+                            <span>
+                                <strong>View all 21 planned lessons</strong>
+                                <small>Dates, modules and principal topics</small>
+                            </span>
+                            <span class="modules-button-icon" aria-hidden="true"></span>
+                        </summary>
+
+                        <ol class="lesson-plan-list">
+                            <li><time datetime="2026-09-23">Wed 23 Sep</time><span><strong>L01 · Bridge</strong> Course organisation, diagnostic and calculus review</span></li>
+                            <li><time datetime="2026-09-24">Thu 24 Sep</time><span><strong>L02 · Bridge</strong> Linear algebra, probability and notation</span></li>
+                            <li><time datetime="2026-09-30">Wed 30 Sep</time><span><strong>L03 · Module 1</strong> Metric spaces, distances and convergence</span></li>
+                            <li><time datetime="2026-10-01">Thu 1 Oct</time><span><strong>L04 · Module 1</strong> Completeness, compactness and Baire category</span></li>
+                            <li><time datetime="2026-10-07">Wed 7 Oct</time><span><strong>L05 · Module 1</strong> Normed, Banach and Hilbert spaces</span></li>
+                            <li><time datetime="2026-10-08">Thu 8 Oct</time><span><strong>L06 · Module 2</strong> Sigma-algebras, Borel sets and measures</span></li>
+                            <li><time datetime="2026-10-14">Wed 14 Oct</time><span><strong>L07 · Module 2</strong> Lebesgue integration, convergence and Lp spaces</span></li>
+                            <li><time datetime="2026-10-15">Thu 15 Oct</time><span><strong>L08 · Module 2</strong> Fourier series, transform, convolution and FFT</span></li>
+                            <li><time datetime="2026-10-21">Wed 21 Oct</time><span><strong>L09 · Module 3</strong> Probability spaces, variables and moments</span></li>
+                            <li><time datetime="2026-10-22">Thu 22 Oct</time><span><strong>L10 · Module 3</strong> Joint laws, conditioning and Radon–Nikodym</span></li>
+                            <li><time datetime="2026-10-28">Wed 28 Oct</time><span><strong>L11 · Module 3</strong> Convergence, LLN, CLT and characteristic functions</span></li>
+                            <li><time datetime="2026-10-29">Thu 29 Oct</time><span><strong>L12 · Module 4</strong> Processes, filtrations and martingales</span></li>
+                            <li><time datetime="2026-11-04">Wed 4 Nov</time><span><strong>L13 · Module 4</strong> Markov, Feller and Kolmogorov dynamics</span></li>
+                            <li><time datetime="2026-11-05">Thu 5 Nov</time><span><strong>L14 · Module 4</strong> Brownian motion, Poisson processes and stopping</span></li>
+                            <li><time datetime="2026-11-11">Wed 11 Nov</time><span><strong>L15 · Module 5</strong> Variation, Riemann–Stieltjes and semimartingales</span></li>
+                            <li><time datetime="2026-11-12">Thu 12 Nov</time><span><strong>L16 · Module 5</strong> Quadratic variation and stochastic integration</span></li>
+                            <li><time datetime="2026-11-18">Wed 18 Nov</time><span><strong>L17 · Module 5</strong> Itô processes and Itô formula</span></li>
+                            <li><time datetime="2026-11-19">Thu 19 Nov</time><span><strong>L18 · Module 6</strong> Measure changes and exponential martingales</span></li>
+                            <li><time datetime="2026-11-25">Wed 25 Nov</time><span><strong>L19 · Module 6</strong> Girsanov and Brownian martingale representation</span></li>
+                            <li><time datetime="2026-11-26">Thu 26 Nov</time><span><strong>L20 · Module 6</strong> SDEs and Feynman–Kac formulas</span></li>
+                            <li><time datetime="2026-12-02">Wed 2 Dec</time><span><strong>L21 · Review</strong> Mock examination, correction and error clinic</span></li>
+                        </ol>
+                    </details>
+                </article>
+
+                <article class="course-section" id="workload">
+                    <p class="course-section-label">Study planning</p>
+                    <h2>Workload and exercise policy</h2>
+
+                    <p>
+                        The complete slide decks and exercise collections are
+                        intentionally extensive. They provide coverage,
+                        alternative explanations and long-term exam practice;
+                        they are not all assigned at once.
+                    </p>
+
+                    <div class="workload-grid">
+
+                        <div class="workload-card workload-core">
+                            <span class="material-badge badge-core">Core</span>
+                            <strong>Expected weekly work</strong>
+                            <p>
+                                Definitions highlighted in class and four
+                                representative exercises per lesson.
+                            </p>
+                        </div>
+
+                        <div class="workload-card">
+                            <span class="material-badge badge-recommended">Recommended</span>
+                            <strong>Consolidation</strong>
+                            <p>
+                                Four additional exercises selected to vary
+                                method and difficulty.
+                            </p>
+                        </div>
+
+                        <div class="workload-card">
+                            <span class="material-badge badge-optional">Optional</span>
+                            <strong>Advanced practice</strong>
+                            <p>
+                                Two challenge problems, longer proofs and
+                                extension slides for deeper study.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="transparency-box">
+                        <h3>The exercise banks are libraries</h3>
+                        <p>
+                            The 100-plus exercise packs are not weekly
+                            compulsory lists. A dated exercise sheet will
+                            identify the small subset expected for the next
+                            lesson.
+                        </p>
                     </div>
                 </article>
 
-                                <!-- LECTURE DIARY -->
-                
                 <article class="course-section" id="lecture-diary">
-                
                     <p class="course-section-label">Course record</p>
-                
                     <h2>Lecture diary</h2>
-                
+
                     <p>
-                        This section records the topics actually covered during each
-                        lesson, together with the corresponding slides, exercises and
-                        indications for the following class.
+                        After every lesson this section will record the topics
+                        actually covered, the precise slide interval, the
+                        assigned core exercises, the annotated notes and the
+                        next lesson's prerequisite recall.
                     </p>
-                
-                    <p>
-                        The diary will be updated after every lesson. The most recent
-                        entry will appear first.
-                    </p>
-                
+
                     <div class="announcement-card">
-                        <strong>Diary not yet started</strong>
-                
+                        <strong>Diary begins on 23 September 2026</strong>
                         <span>
-                            The first entry will be published after the first lesson
-                            of the course.
+                            Planned dates appear in the calendar. Diary entries
+                            will report completed material only and will be
+                            added after each class.
                         </span>
                     </div>
-                
-                    <div class="weekly-module-list">
-                
-                        <details class="weekly-module" open>
-                
-                            <summary>
-                                <span>
-                                    <strong>Lecture 01 · 6 October 2026</strong>
-                
-                                    <span>
-                                        Course introduction and mathematical prerequisites
-                                    </span>
-                                </span>
-                            </summary>
-                
-                            <div class="weekly-module-content">
-                
-                                <p>
-                                    <strong>Topics covered:</strong>
-                                </p>
-                
-                                <ul>
-                                    <li>Course organisation and assessment structure.</li>
-                                    <li>Review of sequences, limits and mathematical notation.</li>
-                                    <li>Introduction to metric spaces.</li>
-                                </ul>
-                
-                                <p>
-                                    <strong>Slides:</strong>
-                
-                                    <a
-                                        href="materials/lectures/module-0/lecture-01-introduction.pdf"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        Lecture 01 slides
-                                    </a>
-                                </p>
-                
-                                <p>
-                                    <strong>Exercises:</strong>
-                
-                                    <a
-                                        href="materials/exercises/module-0/exercise-sheet-01.pdf"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        Exercise sheet 01
-                                    </a>
-                                </p>
-                
-                                <p>
-                                    <strong>Required work:</strong>
-                                    Complete exercises 1–6 before the next lesson.
-                                </p>
-                
-                                <p>
-                                    <strong>Next lesson:</strong>
-                                    Metrics, convergence and completeness.
-                                </p>
-                
-                                <p>
-                                    <strong>Exam relevance:</strong>
-                                    Core material.
-                                </p>
-                
-                            </div>
-                
-                        </details>
-                
-                    </div>
-                
+
+                    <!--
+                    ENTRY TEMPLATE
+
+                    <details class="weekly-module" id="lecture-01">
+                        <summary>
+                            <span>
+                                <strong>Lecture 01 · 23 September 2026</strong>
+                                <span>Actual topic title</span>
+                            </span>
+                        </summary>
+                        <div class="weekly-module-content">
+                            <p><strong>Topics completed:</strong> ...</p>
+                            <p><strong>Core slides:</strong> ...</p>
+                            <p><strong>Annotated slides:</strong> ...</p>
+                            <p><strong>Core exercises:</strong> ...</p>
+                            <p><strong>Recommended exercises:</strong> ...</p>
+                            <p><strong>Next prerequisite recall:</strong> ...</p>
+                        </div>
+                    </details>
+                    -->
                 </article>
 
                 <article class="course-section" id="materials">
                     <p class="course-section-label">Resources</p>
-                    <h2>Teaching materials</h2>
+                    <h2>Teaching materials and publication timetable</h2>
 
-                    <p>
-                        Materials will be published progressively and clearly
-                        labelled as core, recommended, optional or exam
-                        preparation.
-                    </p>
+                    <div class="publication-timeline">
+
+                        <div>
+                            <strong>Before the lesson</strong>
+                            <span>
+                                Core slide selection, prerequisite checklist
+                                and exercise sheet, normally at least three
+                                days in advance.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>After the lesson</strong>
+                            <span>
+                                Tablet-annotated slides and an updated lecture
+                                diary entry.
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>After independent attempt</strong>
+                            <span>
+                                Detailed exercise solutions, normally within
+                                24–48 hours.
+                            </span>
+                        </div>
+
+                    </div>
 
                     <div class="resource-grid">
                         <div class="resource-card">
-                            <strong>Lecture notes</strong>
-                            <span>Slides and notes organised by module and lesson.</span>
+                            <span class="material-badge badge-core">Core</span>
+                            <strong>Lecture selections</strong>
+                            <span>Only the slides actively used in each lesson.</span>
                         </div>
 
                         <div class="resource-card">
-                            <strong>Exercises and solutions</strong>
-                            <span>Core exercises, guided problems and selected solutions.</span>
+                            <span class="material-badge badge-reference">Reference</span>
+                            <strong>Complete module decks</strong>
+                            <span>Full theory, examples, proofs, diagrams and extensions.</span>
                         </div>
 
                         <div class="resource-card">
-                            <strong>Exam preparation</strong>
-                            <span>Mock exams, grading guidance and representative questions.</span>
+                            <span class="material-badge badge-recommended">Practice</span>
+                            <strong>Exercise sheets</strong>
+                            <span>Dated core, recommended and advanced selections.</span>
+                        </div>
+
+                        <div class="resource-card">
+                            <span class="material-badge badge-solution">Solutions</span>
+                            <strong>Detailed corrections</strong>
+                            <span>Step-by-step methods and common-error notes.</span>
+                        </div>
+
+                        <div class="resource-card">
+                            <span class="material-badge badge-reference">Reference</span>
+                            <strong>Complete exercise banks</strong>
+                            <span>Large collections for varied and long-term exam preparation.</span>
+                        </div>
+
+                        <div class="resource-card">
+                            <span class="material-badge badge-core">Assessment</span>
+                            <strong>Mock examination</strong>
+                            <span>Representative paper, marking rubric and full solution.</span>
                         </div>
                     </div>
 
                     <p class="placeholder-note">
-                        The material cards will become clickable when the
-                        corresponding files and material index pages are
-                        available.
+                        Resource cards become links when the corresponding
+                        files are copied into the course materials folders.
                     </p>
                 </article>
 
                 <article class="course-section" id="assessment">
                     <p class="course-section-label">Evaluation</p>
-                    <h2>Assessment and examinations</h2>
+                    <h2>Assessment and examination transparency</h2>
 
                     <p>
-                        The assessment scheme is currently provisional. The
-                        final format, dates, weights and examination rules
-                        will be published before teaching begins.
+                        The final written examination is the confirmed
+                        assessment component. A single assessment sheet will
+                        collect all rules before the first lesson; no
+                        examination requirement will be communicated only
+                        orally.
                     </p>
 
                     <div class="assessment-grid">
                         <div>
-                            <strong>Confirmed component</strong>
-                            <span>Final written examination</span>
+                            <strong>Format</strong>
+                            <span>Written examination</span>
                         </div>
 
                         <div>
-                            <strong>Possible content</strong>
-                            <span>Exercises and short theoretical questions</span>
+                            <strong>Question types</strong>
+                            <span>Short theory, method selection and multi-step exercises</span>
                         </div>
 
                         <div>
-                            <strong>Partial assessments</strong>
-                            <span>Under consideration</span>
+                            <strong>Programming</strong>
+                            <span>No programming-language syntax is assessed</span>
                         </div>
+
+                        <div>
+                            <strong>Detailed specification</strong>
+                            <span>Published by 16 September 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="assessment-checklist">
+                        <h3>The assessment sheet will state explicitly:</h3>
+                        <ul class="check-list">
+                            <li>duration and total score;</li>
+                            <li>number and type of questions;</li>
+                            <li>score assigned to every part;</li>
+                            <li>minimum requirements and passing rule;</li>
+                            <li>permitted materials and calculator policy;</li>
+                            <li>role and rules of any partial assessment;</li>
+                            <li>criteria for mathematical correctness, reasoning and presentation.</li>
+                        </ul>
                     </div>
 
                     <div class="transparency-box">
-                        <h3>Possible in-course tests</h3>
+                        <h3>Progress test and mock examination</h3>
                         <p>
-                            The introduction of one or more partial
-                            assessments is being considered in order to
-                            distribute the workload, provide earlier feedback
-                            and encourage continuous study. If activated,
-                            their number, dates, covered syllabus, grading
-                            weight and relationship with the final written
-                            examination will be announced here before the
-                            beginning of the course.
+                            A formative progress test will be provided after
+                            Module 3. The final lesson is reserved for a
+                            complete mock written examination and public
+                            correction. Any graded partial assessment will be
+                            announced, with complete rules, before teaching
+                            begins.
                         </p>
                     </div>
-
-                    <p>
-                        The written assessment will evaluate mathematical
-                        correctness, choice of method, completeness of the
-                        reasoning, interpretation of results and clarity of
-                        presentation. A detailed grading structure and a mock
-                        examination will be published in advance.
-                    </p>
                 </article>
 
                 <article class="course-section" id="feedback">
                     <p class="course-section-label">Course improvement</p>
-                    <h2>Student feedback</h2>
+                    <h2>Student feedback while changes are still possible</h2>
 
                     <p>
-                        A short anonymous feedback questionnaire will be
-                        proposed during the course, while there is still time
-                        to adjust explanations, exercises and workload.
+                        Short anonymous pulse surveys will be proposed after
+                        Lessons 5, 11 and 17. The results will be reviewed
+                        during the course rather than only after it has ended.
                     </p>
 
                     <div class="feedback-prompts">
-                        <p>What is helping you learn?</p>
-                        <p>Which topics need further explanation?</p>
-                        <p>Is the weekly workload clear and manageable?</p>
-                        <p>What one change would improve the course?</p>
+                        <p>Are the prerequisite recalls sufficient?</p>
+                        <p>Is the distinction between core and optional work clear?</p>
+                        <p>Are explanations, annotations and examples easy to follow?</p>
+                        <p>Are the exercise blocks useful and appropriately paced?</p>
+                        <p>Which topic requires an additional support session?</p>
+                        <p>What one change would improve the next two weeks?</p>
+                    </div>
+
+                    <div class="transparency-box">
+                        <h3>Response log</h3>
+                        <p>
+                            Changes made in response to feedback—additional
+                            exercises, slower treatment, supplementary notes
+                            or revised workload—will be recorded in the
+                            announcements section.
+                        </p>
                     </div>
                 </article>
 
@@ -851,13 +1066,45 @@
                     <p class="course-section-label">Help</p>
                     <h2>Office hours and student support</h2>
 
-                    <p>
-                        Office hours and meeting arrangements will be
-                        published before the beginning of the course.
-                        Students are encouraged to ask for clarification
-                        early, especially when difficulties concern
-                        prerequisites or mathematical notation.
-                    </p>
+                    <div class="support-grid">
+
+                        <div class="support-card">
+                            <strong>Weekly office hour</strong>
+                            <p>
+                                The fixed weekly time and room will be
+                                published before 23 September. Online
+                                appointments can be arranged when necessary.
+                            </p>
+                        </div>
+
+                        <div class="support-card">
+                            <strong>Email questions</strong>
+                            <p>
+                                Questions are welcome throughout the course.
+                                Messages normally receive a response within
+                                two working days.
+                            </p>
+                        </div>
+
+                        <div class="support-card">
+                            <strong>Course FAQ</strong>
+                            <p>
+                                Recurring questions about notation, exercises,
+                                materials and examination rules will be
+                                answered once in an updated public FAQ.
+                            </p>
+                        </div>
+
+                        <div class="support-card">
+                            <strong>Additional support</strong>
+                            <p>
+                                When feedback shows a shared difficulty, an
+                                extra exercise sheet or targeted support
+                                session will be added.
+                            </p>
+                        </div>
+
+                    </div>
 
                     <p>
                         Email:
@@ -875,14 +1122,17 @@
                 <ul class="course-sidebar-list">
                     <li><a href="#start-here">Start here</a></li>
                     <li><a href="#announcements">Announcements</a></li>
+                    <li><a href="#teaching-commitments">Commitments</a></li>
+                    <li><a href="#lesson-format">Lesson format</a></li>
                     <li><a href="#prerequisites">Prerequisites</a></li>
                     <li><a href="#outcomes">Learning outcomes</a></li>
                     <li><a href="#roadmap">Course roadmap</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#schedule">Calendar</a></li>
+                    <li><a href="#workload">Workload</a></li>
                     <li><a href="#lecture-diary">Lecture diary</a></li>
                     <li><a href="#materials">Materials</a></li>
                     <li><a href="#assessment">Assessment</a></li>
-                    <li><a href="#feedback">Student feedback</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
                     <li><a href="#support">Support</a></li>
                 </ul>
             </aside>
@@ -891,6 +1141,7 @@
     </section>
 
 </main>
+
 
 <footer>
     <div class="container">
