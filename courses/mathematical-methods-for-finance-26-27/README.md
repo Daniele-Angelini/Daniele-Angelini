@@ -1,32 +1,19 @@
-# Mathematical Methods for Finance — compact course page
+# Mathematical Methods for Finance course-page update
 
-This revision reduces vertical scrolling and makes the page easier to use on smartphones.
+Files:
+- `index.html`: complete revised course page.
+- `course-2026-27-additions.css`: dropdown, calendar, workload, support and responsive styles.
+- `course-calendar.js`: 21 scheduled lessons, FullCalendar initialization and accessible lesson details.
 
-## Files
+Deployment:
+1. Replace the current course `index.html` with the supplied file.
+2. Place the CSS and JS files in the same course directory.
+3. Keep the existing `../../style.css` and `../../script.js` paths unchanged.
+4. The page loads the pinned FullCalendar 6.1.21 global bundle from jsDelivr.
+5. Upload course PDFs to the desired `materials/` folders, then turn the resource cards into links.
 
-- `index.html`
-- `course-2026-27-additions.css`
-- `course-calendar.js`
-- `course-page.js`
-
-## Main structural changes
-
-1. The long sidebar and the long sequence of visible sections have been removed.
-2. The page opens with four compact dashboard cards and a horizontally scrollable shortcut bar.
-3. All detailed content is grouped into five major native HTML `<details>` accordions:
-   - How the course works
-   - Programme and learning outcomes
-   - Calendar and lecture diary
-   - Teaching materials
-   - Assessment, feedback and support
-4. Each major accordion contains smaller nested accordions.
-5. On screens below 760 px, opening a major panel automatically closes the other major panels.
-6. The interactive calendar is loaded only when its accordion is opened.
-7. On phones the calendar opens in list view rather than month view.
-8. The next lesson, upcoming lessons and the complete lesson plan are generated from one shared lesson dataset.
-
-## Installation
-
-Copy all four web files into the existing course folder. Keep the existing relative paths to `../../style.css`, `../../script.js` and the rest of the website.
-
-FullCalendar is loaded from the pinned CDN URL already included in `index.html`.
+Calendar assumption:
+- every Wednesday and Thursday from 23 September 2026;
+- 14:30–17:30;
+- 21 meetings in total;
+- final meeting on Wednesday 2 December 2026.
