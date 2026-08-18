@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story title | Daniele Angelini</title>
+    <meta name="description" content="Short description of the story.">
+    <meta name="author" content="Daniele Angelini">
+    <meta name="theme-color" content="#173b57">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../about.css">
+    <script src="../../script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container navigation">
+        <a class="site-name" href="../../index.html">Daniele Angelini</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+        <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+            <a href="../../about.html" aria-current="page">About</a>
+            <a href="../../index.html#research">Research</a>
+            <a href="../../papers.html">Papers</a>
+            <a href="../../teaching.html">Teaching</a>
+            <a href="../../cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <a href="../../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <article class="post-page">
+        <header class="post-header">
+            <div class="container post-container">
+                <nav class="about-breadcrumbs" aria-label="Breadcrumb">
+                    <a href="../../about.html">About</a><span aria-hidden="true">/</span><a href="../stories.html">Stories &amp; Notes</a><span aria-hidden="true">/</span><span>Story title</span>
+                </nav>
+                <p class="post-meta">CATEGORY · DATE</p>
+                <h1>Story title</h1>
+                <p class="post-intro">Short opening paragraph. Use this space to explain why the story matters and what the reader will find in the article.</p>
+            </div>
+        </header>
+        <div class="container post-container">
+            <!--
+            <figure class="post-cover">
+                <img src="../../images/stories/story-folder/cover.jpg" alt="Description of the image">
+                <figcaption>Optional caption.</figcaption>
+            </figure>
+            -->
+            <section class="post-content">
+                <p>First paragraph of the story. Keep paragraphs short: this makes the post easier to read on mobile.</p>
+                <p>Second paragraph. You can alternate text, photographs, quotations and small galleries.</p>
+                <blockquote>A short quotation or reflection can be placed here.</blockquote>
+                <h2>Section title</h2>
+                <p>Continue the story here.</p>
+                <!--
+                <div class="post-gallery-two">
+                    <figure><img src="../../images/stories/story-folder/photo-01.jpg" alt=""><figcaption>Caption one.</figcaption></figure>
+                    <figure><img src="../../images/stories/story-folder/photo-02.jpg" alt=""><figcaption>Caption two.</figcaption></figure>
+                </div>
+                -->
+            </section>
+            <footer class="post-footer">
+                <a class="button button-secondary" href="../stories.html">← All stories</a>
+            </footer>
+        </div>
+    </article>
+</main>
+<footer>
+    <div class="container">
+        <p>© 2026 Daniele Angelini. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
