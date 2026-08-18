@@ -1,7 +1,4 @@
-/* =========================================================
-   ABOUT SECTION / ABOUT PAGES
-   Additive stylesheet: it works on top of the existing style.css
-   ========================================================= */
+/* ABOUT + STORIES BLOG ADDITIVE STYLES */
 
 .about-page-hero,
 .subpage-header {
@@ -15,12 +12,6 @@
     grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
     align-items: center;
     gap: 58px;
-}
-
-.about-page-hero h1,
-.subpage-header h1 {
-    max-width: 850px;
-    margin-top: 8px;
 }
 
 .about-page-photo {
@@ -74,10 +65,7 @@
     background: #ffffff;
     color: inherit;
     text-decoration: none;
-    transition:
-        transform 0.18s ease,
-        border-color 0.18s ease,
-        box-shadow 0.18s ease;
+    transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .about-hub-card:hover {
@@ -106,11 +94,13 @@
     letter-spacing: 0.08em;
 }
 
-.about-hub-link {
+.about-hub-link,
+.text-link {
     display: inline-block;
     margin-top: 20px;
     color: var(--primary);
     font-weight: 750;
+    text-decoration: none;
 }
 
 .about-mini-grid {
@@ -118,10 +108,6 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
     margin-top: 24px;
-}
-
-.about-mini-grid-wide {
-    margin-top: 26px;
 }
 
 .about-mini-card {
@@ -142,28 +128,21 @@
     line-height: 1.55;
 }
 
-.about-cta-section,
-.about-soft-section {
+.about-soft-section,
+.about-cta-section {
     padding: 54px 0;
     border-top: 1px solid var(--border);
     background: rgba(23, 59, 87, 0.035);
 }
 
-.about-cta,
-.about-back-panel {
+.about-cta {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 32px;
 }
 
-.about-cta h2,
-.about-back-panel h2 {
-    margin-bottom: 10px;
-}
-
-.about-cta p,
-.about-back-panel p {
+.about-cta p {
     max-width: 690px;
     margin-bottom: 0;
     color: var(--muted);
@@ -197,22 +176,10 @@
     padding-bottom: 68px;
 }
 
-.story-main {
-    min-width: 0;
-}
-
 .story-section {
     padding: 0 0 34px;
     margin-bottom: 34px;
     border-bottom: 1px solid var(--border);
-}
-
-.story-section:last-child {
-    margin-bottom: 0;
-}
-
-.story-section h2 {
-    margin: 6px 0 14px;
 }
 
 .story-section p {
@@ -229,11 +196,6 @@
     background: #ffffff;
 }
 
-.about-sticky-card h2 {
-    margin-top: 0;
-    font-size: 1.22rem;
-}
-
 .about-topic-list {
     margin: 18px 0 22px;
     padding-left: 20px;
@@ -244,84 +206,234 @@
     margin-top: 9px;
 }
 
-.text-link {
-    color: var(--primary);
-    font-weight: 750;
-    text-decoration: none;
+/* Stories archive */
+
+.stories-section {
+    padding: 58px 0 70px;
 }
 
-.featured-personal-card {
+.stories-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.story-filter {
+    padding: 9px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: #ffffff;
+    color: var(--primary);
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+}
+
+.story-filter:hover,
+.story-filter.is-active {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: #ffffff;
+}
+
+.stories-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr);
-    gap: 42px;
-    margin: 58px 0;
-    padding: 34px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.story-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
     border: 1px solid var(--border);
     border-radius: 14px;
     background: #ffffff;
 }
 
-.featured-personal-card h2 {
-    margin: 8px 0 18px;
+.story-card[hidden] {
+    display: none;
 }
 
-.featured-personal-card p {
-    line-height: 1.78;
-}
-
-.personal-note {
-    align-self: start;
-    padding: 22px;
-    border-left: 3px solid var(--primary);
-    background: rgba(23, 59, 87, 0.035);
-}
-
-.personal-note strong {
+.story-card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 190px;
+    background: rgba(23, 59, 87, 0.06);
     color: var(--primary);
+    text-decoration: none;
+    font-weight: 800;
 }
 
-.personal-note p {
-    margin-bottom: 0;
+.story-card-image img {
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    display: block;
+}
+
+.story-card-body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 22px;
+}
+
+.story-card-meta {
+    margin: 0 0 10px;
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.story-card h2 {
+    margin: 0 0 12px;
+    font-size: 1.22rem;
+}
+
+.story-card h2 a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.story-card-excerpt {
+    margin: 0 0 20px;
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+.story-card-link {
+    margin-top: auto;
+    color: var(--primary);
+    font-weight: 750;
+    text-decoration: none;
+}
+
+.empty-stories-message {
+    margin: 8px 0 0;
+    padding: 18px;
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    background: #ffffff;
     color: var(--muted);
 }
 
-.about-secondary-heading {
-    margin-top: 68px;
+.empty-stories-message[hidden] {
+    display: none;
 }
 
-.about-interest-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-    margin: 28px 0 68px;
-}
-
-.about-interest-card {
+.stories-help-panel {
+    margin-top: 38px;
     padding: 24px;
     border: 1px solid var(--border);
     border-radius: 12px;
     background: #ffffff;
 }
 
-.about-interest-card h3 {
-    margin: 8px 0 12px;
-    color: var(--primary);
+.stories-help-panel h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
 }
 
-.about-interest-card p {
-    margin: 0;
+.stories-help-panel p {
+    margin-bottom: 0;
     color: var(--muted);
-    line-height: 1.65;
+    line-height: 1.7;
 }
 
-/* =========================================================
-   TABLET / MOBILE
-   ========================================================= */
+/* Post template */
+
+.post-header {
+    padding: 62px 0 34px;
+    border-bottom: 1px solid var(--border);
+    background: var(--background);
+}
+
+.post-container {
+    max-width: 860px;
+}
+
+.post-meta {
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.post-intro {
+    max-width: 780px;
+    color: var(--muted);
+    font-size: 1.12rem;
+    line-height: 1.75;
+}
+
+.post-cover {
+    margin: 38px 0;
+}
+
+.post-cover img,
+.post-gallery-two img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.post-cover figcaption,
+.post-gallery-two figcaption {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.post-content {
+    padding: 34px 0;
+}
+
+.post-content p {
+    font-size: 1.04rem;
+    line-height: 1.85;
+}
+
+.post-content h2 {
+    margin-top: 36px;
+}
+
+.post-content blockquote {
+    margin: 34px 0;
+    padding: 20px 24px;
+    border-left: 4px solid var(--primary);
+    background: rgba(23, 59, 87, 0.04);
+    color: var(--primary);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.post-gallery-two {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 34px 0;
+}
+
+.post-footer {
+    padding: 0 0 62px;
+}
+
+@media (max-width: 980px) {
+    .stories-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
 
 @media (max-width: 900px) {
     .about-page-hero-grid,
-    .story-layout,
-    .featured-personal-card {
+    .story-layout {
         grid-template-columns: 1fr;
     }
 
@@ -333,20 +445,13 @@
     .about-sticky-card {
         position: static;
     }
-
-    .about-interest-grid {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 @media (max-width: 700px) {
     .about-page-hero,
-    .subpage-header {
+    .subpage-header,
+    .post-header {
         padding: 46px 0 38px;
-    }
-
-    .about-page-hero-grid {
-        gap: 30px;
     }
 
     .about-page-photo {
@@ -363,7 +468,8 @@
 
     .about-hub-grid,
     .about-mini-grid,
-    .about-interest-grid {
+    .stories-grid,
+    .post-gallery-two {
         grid-template-columns: 1fr;
     }
 
@@ -378,20 +484,23 @@
         padding-bottom: 46px;
     }
 
-    .featured-personal-card {
-        gap: 24px;
-        margin: 38px 0;
-        padding: 24px;
-    }
-
-    .about-cta,
-    .about-back-panel {
+    .about-cta {
         align-items: flex-start;
         flex-direction: column;
     }
 
-    .about-cta-actions {
-        width: 100%;
+    .story-card-image img {
+        height: 190px;
+    }
+
+    .stories-toolbar {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .story-filter {
+        white-space: nowrap;
     }
 }
 
@@ -403,11 +512,11 @@
     }
 
     .about-mini-card,
-    .about-interest-card {
+    .stories-help-panel {
         padding: 18px;
     }
 
-    .featured-personal-card {
-        padding: 20px 18px;
+    .story-card-body {
+        padding: 19px;
     }
 }
