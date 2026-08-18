@@ -144,7 +144,7 @@
                     added its own images to this memory.
                 </p>
 
-                <div class="immagini-affiancate">
+                <div class="immagini-container">
                     <figure>
                         <img
                             src="../../images/stories/bachelier-bologna/photo-02.jpg"
@@ -162,14 +162,34 @@
                 </div>
 
                 <style>
-                  .immagini-affiancate {
+                  /* Stile per computer e schermi grandi */
+                  .immagini-container {
                     display: flex;
-                    gap: 10px; /* Spazio tra le immagini */
-                    align-items: center; /* Allineamento verticale */
+                    justify-content: center; /* Centra le immagini orizzontalmente */
+                    align-items: center;     /* Allinea verticalmente se hanno altezze diverse */
+                    gap: 15px;               /* Spazio tra le due immagini */
+                    width: 100%;
+                    max-width: 1200px;       /* Larghezza massima del blocco */
+                    margin: 0 auto;          /* Centra l'intero contenitore nella pagina */
+                    padding: 10px;
+                    box-sizing: border-box;
                   }
-                  .immagini-affiancate img {
-                    max-width: 50%; /* Adatta la dimensione */
-                    height: auto;
+                
+                  .immagini-container img {
+                    width: calc(50% - 8px);  /* Divide lo spazio a metà togliendo il gap */
+                    height: auto;            /* Mantiene le proporzioni corrette */
+                    object-fit: cover;       /* Evita che le foto si distorcano */
+                  }
+                
+                  /* Stile per Smartphone (schermi inferiori a 768px) */
+                  @media (max-width: 768px) {
+                    .immagini-container {
+                      flex-direction: column; /* Incolonna le immagini una sotto l'altra */
+                    }
+                    
+                    .immagini-container img {
+                      width: 100%;            /* La foto occupa tutta la larghezza dello schermo */
+                    }
                   }
                 </style>
 
