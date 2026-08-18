@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories &amp; Notes | Daniele Angelini</title>
+    <meta name="description" content="Stories and notes by Daniele Angelini: academic life, scouting, places and personal reflections.">
+    <meta name="author" content="Daniele Angelini">
+    <meta name="theme-color" content="#173b57">
+    <link rel="canonical" href="https://daniele-angelini.github.io/Daniele-Angelini/about/stories.html">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../about.css">
+    <script src="../script.js" defer></script>
+    <script src="stories-data.js" defer></script>
+    <script src="stories-render.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container navigation">
+        <a class="site-name" href="../index.html">Daniele Angelini</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+        <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+            <a href="../about.html" aria-current="page">About</a>
+            <a href="../index.html#research">Research</a>
+            <a href="../papers.html">Papers</a>
+            <a href="../teaching.html">Teaching</a>
+            <a href="../cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <header class="subpage-header stories-header">
+        <div class="container">
+            <nav class="about-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../about.html">About</a><span aria-hidden="true">/</span><span>Stories &amp; Notes</span>
+            </nav>
+            <p class="eyebrow">Stories &amp; Notes</p>
+            <h1>Occasional stories, photographs and notes</h1>
+            <p class="about-lead about-lead-narrow">A small blog-style space for selected experiences: academic life seen from a personal angle, scouting, places, travel, projects and short reflections.</p>
+        </div>
+    </header>
+    <section class="stories-section">
+        <div class="container">
+            <div class="stories-toolbar" aria-label="Story filters">
+                <button class="story-filter is-active" type="button" data-story-filter="all">All</button>
+                <button class="story-filter" type="button" data-story-filter="Academic life">Academic life</button>
+                <button class="story-filter" type="button" data-story-filter="Scouting">Scouting</button>
+                <button class="story-filter" type="button" data-story-filter="Places">Places</button>
+                <button class="story-filter" type="button" data-story-filter="Notes">Notes</button>
+            </div>
+            <div class="stories-grid" data-stories-list></div>
+            <p class="empty-stories-message" data-empty-stories-message>No stories have been published yet.</p>
+            <div class="stories-help-panel">
+                <h2>How this archive works</h2>
+                <p>Each post is a normal static HTML page. To publish a new story, add the page inside <code>about/posts/</code>, place the images inside <code>images/stories/</code>, and add one entry to <code>about/stories-data.js</code>.</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>© 2026 Daniele Angelini. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
