@@ -822,4 +822,78 @@ details.lesson-plan-container > summary small {
     .commitment-card {
         padding-left: 54px;
     }
+
+   /* ================================
+   Teaching commitments dropdown
+   ================================ */
+
+   .commitments-dropdown {
+       width: 100%;
+   }
+   
+   /* Rimuove il triangolino standard del browser */
+   .commitments-summary {
+       list-style: none;
+   }
+   
+   .commitments-summary::-webkit-details-marker {
+       display: none;
+   }
+   
+   /* Titolo cliccabile */
+   .commitments-summary {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap: 1rem;
+   
+       cursor: pointer;
+   
+       font-size: 2rem;
+       font-weight: 700;
+   
+       padding: 0.25rem 0;
+   }
+   
+   /* Freccia */
+   .commitments-arrow {
+       width: 12px;
+       height: 12px;
+   
+       border-right: 2px solid currentColor;
+       border-bottom: 2px solid currentColor;
+   
+       transform: rotate(45deg);
+       transition: transform 0.25s ease;
+   
+       flex-shrink: 0;
+   }
+   
+   /* Freccia verso l'alto quando il menu è aperto */
+   .commitments-dropdown[open] .commitments-arrow {
+       transform: rotate(225deg);
+   }
+   
+   /* Contenuto */
+   .commitments-content {
+       padding-top: 1.25rem;
+   }
+   
+   .commitments-intro {
+       margin-top: 0;
+       margin-bottom: 1.5rem;
+   }
+   
+   /* Migliora il comportamento quando si passa sopra */
+   .commitments-summary:hover {
+       opacity: 0.8;
+   }
+   
+   /* Accessibilità da tastiera */
+   .commitments-summary:focus-visible {
+       outline: 2px solid currentColor;
+       outline-offset: 5px;
+       border-radius: 4px;
+   }
+   
 }
