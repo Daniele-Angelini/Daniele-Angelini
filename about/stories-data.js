@@ -14,7 +14,7 @@ window.siteStories = [
         published: true
     }
     */
-
+    /*
     {
         title: "Bologna and the Bachelier World Congress",
         date: "2026-07-04",
@@ -25,5 +25,5 @@ window.siteStories = [
         excerpt: "A personal note from Bologna: mathematical finance, conference conversations and the feeling of placing one’s research questions inside a wider community.",
         published: true
     }
-    
+    */
 ];
