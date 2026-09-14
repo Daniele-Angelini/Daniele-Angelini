@@ -110,8 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-09",
             title: "L09 · Probability spaces, random variables and moments",
-            start: "2026-10-21T14:30:00",
-            end: "2026-10-21T17:30:00",
+            start: "2026-10-20T10:30:00",
+            end: "2026-10-20T13:30:00",
             extendedProps: {
                 module: "Module 3 · Probability",
                 description:
@@ -132,8 +132,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-11",
             title: "L11 · Convergence, LLN, CLT and characteristic functions",
-            start: "2026-10-28T14:30:00",
-            end: "2026-10-28T17:30:00",
+            start: "2026-10-27T10:30:00",
+            end: "2026-10-27T13:30:00",
             extendedProps: {
                 module: "Module 3 · Probability",
                 description:
@@ -154,8 +154,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-13",
             title: "L13 · Markov, Feller and Kolmogorov dynamics",
-            start: "2026-11-04T14:30:00",
-            end: "2026-11-04T17:30:00",
+            start: "2026-11-03T10:30:00",
+            end: "2026-11-03T13:30:00",
             extendedProps: {
                 module: "Module 4 · Stochastic processes",
                 description:
@@ -176,8 +176,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-15",
             title: "L15 · Variation, Riemann–Stieltjes and semimartingales",
-            start: "2026-11-11T14:30:00",
-            end: "2026-11-11T17:30:00",
+            start: "2026-11-10T10:30:00",
+            end: "2026-11-10T13:30:00",
             extendedProps: {
                 module: "Module 5 · Stochastic integration",
                 description:
@@ -198,8 +198,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-17",
             title: "L17 · Itô processes and Itô formula",
-            start: "2026-11-18T14:30:00",
-            end: "2026-11-18T17:30:00",
+            start: "2026-11-17T10:30:00",
+            end: "2026-11-17T13:30:00",
             extendedProps: {
                 module: "Module 5 · Stochastic integration",
                 description:
@@ -220,8 +220,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-19",
             title: "L19 · Girsanov and martingale representation",
-            start: "2026-11-25T14:30:00",
-            end: "2026-11-25T17:30:00",
+            start: "2026-11-24T10:30:00",
+            end: "2026-11-24T13:30:00",
             extendedProps: {
                 module: "Module 6 · Measure changes and SDEs",
                 description:
@@ -242,8 +242,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-21",
             title: "L21 · Mock examination, correction and error clinic",
-            start: "2026-12-02T14:30:00",
-            end: "2026-12-02T17:30:00",
+            start: "2026-12-01T10:30:00",
+            end: "2026-12-01T13:30:00",
             extendedProps: {
                 module: "Final consolidation",
                 description:
