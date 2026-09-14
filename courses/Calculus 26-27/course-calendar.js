@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const calendar = new FullCalendar.Calendar(calendarElement, {
         initialView: "dayGridMonth",
-        initialDate: "2026-09-23",
+        initialDate: "2026-09-16",
         firstDay: 1,
         timeZone: "Europe/Rome",
         height: "auto",
@@ -110,8 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
         eventDurationEditable: false,
         navLinks: false,
         validRange: {
-            start: "2026-09-21",
-            end: "2026-12-04"
+            start: "2026-09-16",
+            end: "2026-12-15"
         },
         headerToolbar: {
             left: "prev,next today",
