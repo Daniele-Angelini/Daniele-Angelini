@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-01",
             title: "L01 · Course organisation, diagnostic and calculus review",
-            start: "2026-09-23T14:30:00",
-            end: "2026-09-23T17:30:00",
+            start: "2026-09-22T10:30:00",
+            end: "2026-09-22T13:30:00",
             extendedProps: {
                 module: "Preparatory bridge",
                 description:
@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-03",
             title: "L03 · Metric spaces, distances and convergence",
-            start: "2026-09-30T14:30:00",
-            end: "2026-09-30T17:30:00",
+            start: "2026-09-29T10:30:00",
+            end: "2026-09-29T13:30:00",
             extendedProps: {
                 module: "Module 1 · Functional analysis",
                 description:
@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-05",
             title: "L05 · Normed, Banach and Hilbert spaces",
-            start: "2026-10-07T14:30:00",
-            end: "2026-10-07T17:30:00",
+            start: "2026-10-06T10:30:00",
+            end: "2026-10-06T13:30:00",
             extendedProps: {
                 module: "Module 1 · Functional analysis",
                 description:
@@ -88,8 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-07",
             title: "L07 · Lebesgue integration, convergence and Lp spaces",
-            start: "2026-10-14T14:30:00",
-            end: "2026-10-14T17:30:00",
+            start: "2026-10-13T10:30:00",
+            end: "2026-10-13T13:30:00",
             extendedProps: {
                 module: "Module 2 · Measure and Fourier analysis",
                 description:
