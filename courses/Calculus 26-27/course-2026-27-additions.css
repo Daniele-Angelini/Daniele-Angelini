@@ -236,7 +236,7 @@ details.modules-container
     display: grid;
     grid-template-columns:
         minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
-    align-items: stretch;
+    align-items: center;
     gap: 12px;
     margin-top: 22px;
 }
