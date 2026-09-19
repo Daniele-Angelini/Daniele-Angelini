@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "L05",
             start: "2026-09-25T18:00:00",
             end: "2026-09-25T20:00:00"
-        }
+        },
         {
             id: "lesson-06",
             title: "L06",
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "L08",
             start: "2026-10-02T18:00:00",
             end: "2026-10-02T20:00:00"
-        }
+        },
         {
             id: "lesson-09",
             title: "L09",
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "L11",
             start: "2026-10-09T18:00:00",
             end: "2026-10-09T20:00:00"
-        }
+        },
         {
             id: "lesson-12",
             title: "L12",
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "L14",
             start: "2026-10-16T18:00:00",
             end: "2026-10-16T20:00:00"
-        }
+        },
         {
             id: "lesson-15",
             title: "L15",
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "L17",
             start: "2026-10-23T18:00:00",
             end: "2026-10-23T20:00:00"
-        }
+        },
         {
             id: "lesson-18",
             title: "L18",
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "L20",
             start: "2026-10-30T18:00:00",
             end: "2026-10-30T20:00:00"
-        }
+        },
         {
             id: "lesson-21",
             title: "L21",
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "L23",
             start: "2026-11-06T18:00:00",
             end: "2026-11-06T20:00:00"
-        }
+        },
         {
             id: "lesson-24",
             title: "L24",
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "L26",
             start: "2026-11-13T18:00:00",
             end: "2026-11-13T20:00:00"
-        }
+        },
         {
             id: "lesson-27",
             title: "L27",
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "L29",
             start: "2026-11-20T18:00:00",
             end: "2026-11-20T20:00:00"
-        }
+        },
         {
             id: "lesson-30",
             title: "L30",
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "L32",
             start: "2026-11-27T18:00:00",
             end: "2026-11-27T20:00:00"
-        }
+        },
         {
             id: "lesson-33",
             title: "L33",
@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "L35",
             start: "2026-12-04T18:00:00",
             end: "2026-12-04T20:00:00"
-        }
+        },
         {
             id: "lesson-36",
             title: "L36",
