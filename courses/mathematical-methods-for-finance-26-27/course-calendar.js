@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-01",
             title: "L01 · Course organisation, diagnostic and calculus review",
-            start: "2026-09-22T10:30:00+02:00",
-            end: "2026-09-22T13:30:00+02:00",
+            start: "2026-09-22T10:30:00",
+            end: "2026-09-22T13:30:00",
             extendedProps: {
                 module: "Preparatory bridge",
                 description:
@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-03",
             title: "L03 · Metric spaces, distances and convergence",
-            start: "2026-09-29T10:30:00+02:00",
-            end: "2026-09-29T13:30:00+02:00",
+            start: "2026-09-29T10:30:00",
+            end: "2026-09-29T13:30:00",
             extendedProps: {
                 module: "Module 1 · Functional analysis",
                 description:
@@ -55,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-04",
             title: "L04 · Completeness, compactness and Baire category",
-            start: "2026-10-01T14:30:00+02:00",
-            end: "2026-10-01T17:30:00+02:00",
+            start: "2026-10-01T14:30:00",
+            end: "2026-10-01T17:30:00",
             extendedProps: {
                 module: "Module 1 · Functional analysis",
                 description:
@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-05",
             title: "L05 · Normed, Banach and Hilbert spaces",
-            start: "2026-10-06T10:30:00+02:00",
-            end: "2026-10-06T13:30:00+02:00",
+            start: "2026-10-06T10:30:00",
+            end: "2026-10-06T13:30:00",
             extendedProps: {
                 module: "Module 1 · Functional analysis",
                 description:
@@ -77,8 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-06",
             title: "L06 · Sigma-algebras, Borel sets and measures",
-            start: "2026-10-08T14:30:00+02:00",
-            end: "2026-10-08T17:30:00+02:00",
+            start: "2026-10-08T14:30:00",
+            end: "2026-10-08T17:30:00",
             extendedProps: {
                 module: "Module 2 · Measure and Fourier analysis",
                 description:
@@ -88,8 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-07",
             title: "L07 · Lebesgue integration, convergence and Lp spaces",
-            start: "2026-10-13T10:30:00+02:00",
-            end: "2026-10-13T13:30:00+02:00",
+            start: "2026-10-13T10:30:00",
+            end: "2026-10-13T13:30:00",
             extendedProps: {
                 module: "Module 2 · Measure and Fourier analysis",
                 description:
@@ -99,8 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: "lesson-08",
             title: "L08 · Fourier series, transform, convolution and FFT",
-            start: "2026-10-15T14:30:00+02:00",
-            end: "2026-10-15T17:30:00+02:00",
+            start: "2026-10-15T14:30:00",
+            end: "2026-10-15T17:30:00",
             extendedProps: {
                 module: "Module 2 · Measure and Fourier analysis",
                 description:
